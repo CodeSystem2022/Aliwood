@@ -7,6 +7,17 @@ AliWood es una empresa dedicada a la fabricación y venta de muebles de algarrob
 
 Para abordar el proyecto en el 2023, nos proponemos implementar un sitio web que muestre toda la información de nuestro negocio en lo relacionado con productos y precios, contacto a través de Whatsapp y correo electrónico, compra y seguimiento logístico.
 
+
+<hr>
+
+**`CUADRO DE INTEGRANTES QUE NO HAN CUMPLIDO CON LAS ISSUES EN TIEMPO Y FORMA:`**
+
+| | **INTENGRANTE** |  **Nº DE SEMANA** | **ISSUE REASIGNADA A:** | **OBSERVACIONES** |
+| ---- | ---- | ----- | ----- | ---- |
+| :x: | *________* | *1-10* | *________* | *______________* | 
+
+<hr>
+
 ## Tecnologías Utilizadas
 
 Para la realización de AliWood, utilizaremos las siguientes tecnologías (sujetas a modificaciones):
