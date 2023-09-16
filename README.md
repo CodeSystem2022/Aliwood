@@ -1,5 +1,7 @@
 # AliWood - Muebles de Algarrobo
 
+Este proyecto está siendo desarrollado por un grupo de estudiantes de la carrera Tecnicatura Universitaria en programación, equipo AlíBabá de la Universidad Tecnológica Nacional de San Rafael, Mendoza, Argentina.
+
 
 AliWood es una empresa dedicada a la fabricación y venta de muebles de algarrobo de la más alta calidad.
 
@@ -51,8 +53,6 @@ Nuestro e-commerce será escalable para conseguir objetivos más superadores en 
 - Compatibilidad con dispositivos móviles y una interfaz de usuario intuitiva.
 
 ## Contribuyentes
-
-Este proyecto está siendo desarrollado por un grupo de estudiantes de la carrera Tecnicatura Universitaria en programación, equipo AlíBabá de la Universidad Tecnológica Nacional de San Rafael, Mendoza, Argentina.
 
 
 |                                                                                                                                              <img src="https://i.postimg.cc/QtwHyH4q/Gabriel.jpg" alt="Photo Carolina Quevedo" height=150>                                                                                                                                              | <img src="https://i.postimg.cc/nhn7f92F/Matias.jpg" alt="Photo Matías Carballo" height=150>|                                                                                                                                              <img src="https://i.postimg.cc/gJ9CtpyZ/Angel.jpg" alt="Photo Ángel Escobar" height=150>                                                                                                                                               |
