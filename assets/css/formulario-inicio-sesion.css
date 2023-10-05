@@ -1,0 +1,28 @@
+:root{
+    --dark:  #101116;
+    --dark-x: #6c7482;
+    --light: #ffffff;
+
+
+}
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-weight:300;
+    color: var(--light);
+
+
+
+}
+.bg-dark { background-color: var(--dark) !important;}
+.bg-dark-x{ background-color: var(--dark-x) !important;}
+
+.form-control, btn{
+    min-height: 3125res;
+    line-height: initial;
+}
+.content{
+    margin-top: 60px;
+   
+}
+
+
