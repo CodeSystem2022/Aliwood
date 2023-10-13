@@ -20,7 +20,15 @@ nav{
   justify-content: space-between;
   height: 150px;
   padding: 0 500px;
+  margin-left: 27px;
 }
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
 /* Estilos para el logotipo en la barra de navegación */
 nav .logo{
   color: #fff;
@@ -30,24 +38,35 @@ nav .logo{
 }
 /* Estilos para el contenedor del logotipo */
 .logo-container {
-  position: absolute;
-  left: 30px; 
-  top: 10%; 
-  transform: translateY(-50%); 
+  top: 80; 
+ 
 }
 /* Estilos para la imagen del logotipo */
 .logo-img {
-  width: 90px; 
-  max-width: 100%;
+  width: 140px; 
   height: auto; 
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  
 }
 /* Estilos para ocultar el logotipo en pantallas más pequeñas */
-@media screen and (max-width: 1024px) {  
+@media screen and (max-width: 1140px) {  
   .logo-container {  
+    position: fixed;
     display:none;  /* Ocultamos el contenedor del logotipo */
     visibility: hidden;
   } 
 }
+/* Estilos para ocultar el logotipo en pantallas más pequeñas */
+@media screen and (max-width: 900px) {  
+  .logo-container {  
+    position: fixed;
+    display:none;  /* Ocultamos el contenedor del logotipo */
+    visibility: hidden;
+  } 
+}
+
 
 /* Estilos para los elementos de navegación */
 nav .nav-items{
@@ -63,6 +82,12 @@ nav .nav-items{
   
 }
 @media (max-width: 1024px) {
+  .register {
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 1140px) {
   .register {
     background-color: transparent;
   }
@@ -123,6 +148,7 @@ nav form{
 nav form .search-data{
   width: 88%;
   height: 145%;
+  left: 30px;
   padding: 0 10px;
   color: #14181f;
   font-size: 17px;
@@ -204,7 +230,7 @@ nav .search-icon{
   nav .nav-items{
     position: fixed;
     z-index: 99;
-    top: 70px;
+    top: 40px;
     width: 100%;
     left: -100%;
     height: 100%;
@@ -233,16 +259,17 @@ nav .search-icon{
   nav form{
     position: absolute;
     top: 80px;
-    right: 50px;
+    right: 100px;
     opacity: 0;
     pointer-events: none;
     transition: top 0.3s ease, opacity 0.1s ease;
   }
   /* Estilos para el formulario de búsqueda cuando está activo (visible) */
   nav form.active{
-    top: 95px;
-    opacity: 1;
+    top: 70px;
+    opacity: 50;
     pointer-events: auto;
+    left: 150px;
   }
   /* Estilos para el efecto de flecha en el formulario de búsqueda */
   nav form:before{
@@ -324,26 +351,74 @@ nav .logo.space{
 }
 /* Estilos responsivos para pantallas medianas (max-width: 980px) */
 
-@media (max-width: 980px){
+@media (max-width: 600px){
   nav .menu-icon,
   nav .cancel-icon,
   nav .search-icon{
-    margin: 0 20px;
+    margin: 0 55px;
   }
   nav form{
     right: 30px;
+    
+    width:1px
+    
   }
 }
 /* Estilos responsivos para pantallas muy pequeñas (max-width: 350px) */
-
-@media (max-width: 350px){
+@media (max-width: 300px){
   nav .menu-icon,
   nav .cancel-icon,
+  nav .image
   nav .search-icon{
-    margin: 0 10px;
-    font-size: 16px;
+    margin: 0 0px;
+    font-size: 400px;
+  }
+  nav form{
+    right: 10x;
+    left: 50px;
+    width:10px
   }
 }
+
+@media (max-width: 800px){
+  nav .menu-icon,
+  nav .cancel-icon,
+  nav .image
+  nav .search-icon{
+    margin: 0 55px;
+    font-size: 16px;
+  }
+  nav form{
+    right: 10x;
+    left: 50px;
+    width:10px
+  }
+}
+
+
+@media (max-width: 1100px){
+  nav .menu-icon,
+  nav .cancel-icon,
+  nav .image{
+    left: 130px;
+    top: 15px;
+    width:20px;
+    height:27px
+  }
+  nav .search-icon{
+   
+    margin: 0 45px;
+ 
+  }
+  nav form{
+    right: 10x;
+    left: 350px;
+    width:150px;
+  
+  }
+}
+
+
 /* Estilos para el contenedor del contenido principal */
 
 .content{
