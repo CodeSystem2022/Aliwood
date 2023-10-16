@@ -1,0 +1,231 @@
+/* Estilo global para todos los elementos */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Estilos generales del cuerpo de la página */
+
+body{
+	font-size: 1.7rem;
+	font-family: 'Merriweather Sans', sans-serif;
+	background: #2c3e50;
+	color: #ececec;
+	padding: 4rem;
+}
+/* Estilos para los títulos */
+
+h2{
+	text-align: center;
+	margin-bottom: 5rem;
+	font-size: 4rem;
+}
+/* Estilos para el contenedor de todos los productos */
+
+.all-products {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+    padding: 44px;
+    margin-right: 30px;
+}
+/* Estilos para cada producto individual cocina*/
+.product{
+	overflow: hidden;
+    background: #101116;
+	color: #21201e;
+	text-align: center;
+	width: 240px;
+	height: 347px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.2rem;
+	margin: 1rem;
+}
+/* Estilos para cada producto individual baño comedor */
+.product1{
+	overflow: hidden;
+    background: #101116;
+	color: #21201e;
+	text-align: center;
+	width: 240px;
+	height: 347px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.2rem;
+	margin: 1rem;
+	visibility: hidden;
+
+	
+}
+
+
+
+/* Estilos para los botones de selección de categoría */
+
+.product-btn2{
+	color: #ececec;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 20px;
+	transition: all 0.2s;
+    padding: 1.2rem 3rem;
+    border-radius: 1rem;
+    margin-left: 60px;
+    background-color: #24252A;
+    
+  
+}
+/* Estilos para los botones de selección de categoría */
+
+.product-btn3{
+    color: #ececec;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 20px;
+	transition: all 0.2s;
+    padding: 1.2rem 3rem;
+    border-radius: 1rem;
+    margin-top:  1rem;
+    margin-left: 60px;
+    background-color: #24252A;
+    
+
+}
+
+/* Estilos para los botones de selección de categoría */
+
+.product-btn4{
+    color: #ececec;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 20px;
+	transition: all 0.2s;
+    padding: 1.2rem 3rem;
+    border-radius: 1rem;
+    margin-top: -1rem;
+    margin-left: 60px;
+    background-color: #24252A;
+    
+
+}
+/* Estilos para el contenedor de los botones de selección de categoría */
+
+.mod-btn{
+    color: #ececec;
+  
+    border-radius: 1rem;
+    margin-top: 1rem;
+    top:20px;
+    font-size: 53px;
+    display:inline-block;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.2rem;
+	margin-left:10px;
+    
+   
+}
+/* Cambio de estilo al pasar el mouse por encima de los botones */
+
+.product-btn2:hover {
+    background: linear-gradient(to bottom, #FF5F5F, #E70B25); /* Cambia el degradado al pasar el mouse por encima */
+    color: #FDFDFD; /* Mantiene el color del texto en blanco */
+  }
+
+  .product-btn3:hover {
+    background: linear-gradient(to bottom, #FF5F5F, #E70B25); /* Cambia el degradado al pasar el mouse por encima */
+    color: #FDFDFD; /* Mantiene el color del texto en blanco */
+  }
+
+  .product-btn4:hover {
+    background: linear-gradient(to bottom, #FF5F5F, #E70B25); /* Cambia el degradado al pasar el mouse por encima */
+    color: #FDFDFD; /* Mantiene el color del texto en blanco */
+  }
+
+
+/* Efecto de escala y sombra al pasar el mouse por encima del producto */
+
+.product:hover img{
+	scale:  1.1;
+}
+
+.product:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.product1:hover img{
+	scale:  1.1;
+}
+.product1:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+
+/* Estilos para la imagen del producto */
+
+.product img {
+	height: 200px;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+
+.product1 img {
+	height: 200px;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+/* Estilos para los enlaces de compra */
+
+.product a:link, .product a:visited{
+	color: #A0A0A0;
+	display: inline-block;
+	text-decoration: none;
+	background-color:  #24252A;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.product1 a:link, .product1 a:visited{
+	color: #A0A0A0;
+	display: inline-block;
+	text-decoration: none;
+	background-color:  #24252A;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 14px;
+	transition: all 0.2s;
+
+}
+
+
+
+/* Cambio de estilo al pasar el mouse por encima del enlace de compra */
+
+.product a:hover{
+	transform: scale(1.1);
+    background: linear-gradient(to bottom, #FF5F5F, #E70B25); 
+    color: #FDFDFD;
+}
+
+
+.product1 a:hover{
+	transform: scale(1.1);
+    background: linear-gradient(to bottom, #FF5F5F, #E70B25); 
+    color: #FDFDFD;
+}
