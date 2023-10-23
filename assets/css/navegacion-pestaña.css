@@ -11,7 +11,7 @@ body{
 	font-family: 'Merriweather Sans', sans-serif;
 	background: #2c3e50;
 	color: #ececec;
-	padding: 4rem;
+	padding: 2rem;
 }
 /* Estilos para los títulos */
 
@@ -26,9 +26,12 @@ h2{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-wrap: wrap;
-    padding: 44px;
-    margin-right: 30px;
+	position: fixed;
+    padding: 0px;
+	margin-left: 280px;
+	
+ 
+	
 }
 /* Estilos para cada producto individual cocina*/
 .product{
@@ -70,7 +73,7 @@ h2{
 
 /* Estilos para los botones de selección de categoría */
 
-.product-btn2{
+.product-btn2, .product-btn3, .product-btn4 {
 	color: #ececec;
 	padding: 1.2rem 3rem;
 	border-radius: 1rem;
@@ -81,44 +84,11 @@ h2{
     border-radius: 1rem;
     margin-left: 0px;
     background-color: #24252A;
-    
-  
-}
-/* Estilos para los botones de selección de categoría */
-
-.product-btn3{
-    color: #ececec;
-	padding: 1.2rem 3rem;
-	border-radius: 1rem;
-	margin-top: 1rem;
-	font-size: 20px;
-	transition: all 0.2s;
-    padding: 1.2rem 3rem;
-    border-radius: 1rem;
-    margin-top:  1rem;
-    margin-left: 0px;
-    background-color: #24252A;
-    
-
+	display: inline-block;
+	
 }
 
-/* Estilos para los botones de selección de categoría */
 
-.product-btn4{
-    color: #ececec;
-	padding: 1.2rem 3rem;
-	border-radius: 1rem;
-	margin-top: 1rem;
-	font-size: 20px;
-	transition: all 0.2s;
-    padding: 1.2rem 3rem;
-    border-radius: 1rem;
-    margin-top: -1rem;
-    margin-left: 0px;
-    background-color: #24252A;
-    
-
-}
 /* Estilos para el contenedor de los botones de selección de categoría */
 
 .mod-btn{
@@ -128,15 +98,79 @@ h2{
     margin-top: 1rem;
     top:20px;
     font-size: 53px;
-    display:inline-block;
-	flex-direction: column;
+	border-radius: 0.2rem;
+	margin-left: 300px;   
+}
+@media screen and (max-width: 821px) {  
+	.all-products {
+	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 0.2rem;
-	margin-left:10px;
-    
-   
-}
+	position: relative;
+    padding: 0px;
+	margin-left: 95px;
+
+	flex-wrap: wrap;
+
+	} 
+	.mod-btn{
+		margin-right: 100px;
+	}
+  }
+
+@media screen and (max-width: 768px) {  
+	.all-products {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+    padding: 0px;
+	margin-left: 95px;
+	flex-wrap: wrap;
+	} 
+	.mod-btn{
+		margin-right: 100px;
+	}
+  }
+  @media screen and (max-width: px) {  
+	.all-products {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		padding: 0px;
+		margin-left: 61px;
+		flex-wrap: wrap;
+
+	} 
+	.mod-btn{
+		margin-left: 85px;
+	}
+  }
+
+
+
+  @media screen and (max-width: 480px) {  
+	.all-products {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		padding: 0px;
+		margin-left: 61px;
+		flex-wrap: wrap;
+
+	} 
+	.mod-btn{
+		margin-left: 85px;
+	}
+  }
+
+
+  
+
+  
+
 /* Cambio de estilo al pasar el mouse por encima de los botones */
 
 .product-btn2:hover {
@@ -229,3 +263,8 @@ h2{
     background: linear-gradient(to bottom, #FF5F5F, #E70B25); 
     color: #FDFDFD;
 }
+
+
+
+
+  
