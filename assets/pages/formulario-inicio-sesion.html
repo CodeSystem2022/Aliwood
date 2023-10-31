@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -29,14 +29,14 @@
 
             <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
                 <h1 class="font-weight-bold mb-4"> Iniciar Sesión</h1>
-                <form class="nb-5">
+                <form class="nb-5" id="form">
                     <div class="mb-4">
-                      <label for="exampleInputEmail1" class="form-label font-weight-bold">Email </label>
-                      <input type="email" class="form-control bg-dark-x border-0" placeholder="Ingresa tu email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <label for="email" class="form-label font-weight-bold">Email </label>
+                      <input type="email" class="form-control bg-dark-x border-0" placeholder="Ingresa tu email" id="email" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-4">
-                      <label for="exampleInputPassword1" class="form-label font-label font-weight-bold">Contraseña</label>
-                      <input type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingresa tu contraseña" id="exampleInputPassword1">
+                      <label for="password" class="form-label font-label font-weight-bold">Contraseña</label>
+                      <input type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingresa tu contraseña" id="password">
                       <p class="d-inline-block mb-0">¿Eres nuevo?</p> <a href="#" id="emailHelp" class="text-light font-weight-bold text-wight-bold ">click aquí</a>
 
                     </div>
@@ -47,6 +47,8 @@
 
 
         </div>
+        <script src="../scripts/login.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </section>
   </body>
 </html>

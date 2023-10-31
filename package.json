@@ -1,0 +1,29 @@
+{
+  "name": "aliwood",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">AliWood - Muebles de Algarrobo</h1>",
+  "main": "login.js",
+  "scripts": {
+    "dev": "npx nodemon assets/scripts/src/config/index.js",
+    "start": "node assets/script/src/config/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeSystem2022/Aliwood.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeSystem2022/Aliwood/issues"
+  },
+  "homepage": "https://github.com/CodeSystem2022/Aliwood#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
