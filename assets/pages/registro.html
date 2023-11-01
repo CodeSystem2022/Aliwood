@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +9,7 @@
     <link href="../css/registro.css" rel="stylesheet"/>
     <link href="../css/Styles.css" rel="stylesheet"/>
   </head>
+
   <body class="bg-dark">
         <div class="row g-0 ">
             <div class="col-lg-6 ">
@@ -29,28 +31,28 @@
 
             <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
                 <h1 class="font-weight-bold mb-4"> Regístrate </h1>
-                <form class="nb-5">
+                <form id="form" class="nb-5">
                     <div class="mb-4">
-                        <label for="exampleInputName" class="form-label font-weight-bold">Nombre </label>
-                        <input type="text" class="form-control bg-dark-x border-0" name="nombre" placeholder="Nombre">           
+                        <label for="InputName" class="form-label font-weight-bold">Nombre </label>
+                        <input type="text" class="form-control bg-dark-x border-0" name="nombre" placeholder="Nombre" id="InputName">           
                       </div>
                       <div class="mb-4">
-                        <label for="exampleInputName" class="form-label font-weight-bold">Apellido </label>
-                        <input type="text" class="form-control bg-dark-x border-0" name="Apellido" placeholder="Apellido">           
+                        <label for="InputLastName" class="form-label font-weight-bold">Apellido </label>
+                        <input type="text" class="form-control bg-dark-x border-0" name="Apellido" placeholder="Apellido" id="InputLastName">           
                       </div>
                       <div class="mb-4">
-                        <label for="exampleInputEmail1" class="form-label font-weight-bold">Email </label>
-                        <input type="email" class="form-control bg-dark-x border-0" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="InputEmail" class="form-label font-weight-bold">Email </label>
+                        <input type="email" class="form-control bg-dark-x border-0" placeholder="Email" id="InputEmail" aria-describedby="emailHelp">
                       </div>
                       <div class="mb-4">
-                        <label for="exampleInputPassword1" class="form-label font-label font-weight-bold">Contraseña</label>
-                        <input type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Contraseña" id="exampleInputPassword1">
+                        <label for="InputPassword" class="form-label font-label font-weight-bold">Contraseña</label>
+                        <input type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Contraseña" id="InputPassword">
                         
                       </div>
                     <div class="mb-4">
-                      <label for="exampleInputPassword2" class="form-label font-label font-weight-bold">Confirmar contraseña</label>
-                      <input type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Confirmar contraseña" id="exampleInputPassword1">
-                      <p class="d-inline-block mb-0">¿Ya eres miembro? </p> <a href="#" id="emailHelp" class="text-light font-weight-bold text-wight-bold ">Ingresa aquí</a>
+                      <label for="InputConfirmPassword" class="form-label font-label font-weight-bold">Confirmar contraseña</label>
+                      <input type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Confirmar contraseña" id="InputConfirmPassword">
+                      <p class="d-inline-block mb-0">¿Ya eres miembro? </p> <a href="/assets/pages/formulario-inicio-sesion.html" id="emailHelp" class="text-light font-weight-bold text-wight-bold ">Ingresa aquí</a>
 
                     </div>
                    
@@ -61,5 +63,7 @@
 
         </div>
     </section>
+    <script src="/assets/scripts/registro.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

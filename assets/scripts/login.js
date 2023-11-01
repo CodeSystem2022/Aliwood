@@ -52,7 +52,7 @@ form.addEventListener("submit", async (e) => {
                             timer: 2500,
                           });
                             setTimeout(() => {
-                                window.location.href = "mi-cuenta.html";
+                                window.location.href = "/assets/pages/navegacion-pestaña.html";
                             }, 2500);
                     }else{
                         warnings = `Usuario o Contraseña incorrecta`;
@@ -67,6 +67,6 @@ form.addEventListener("submit", async (e) => {
                     timer: 1500,
                 });
             }
-            })    
+            })  
     }
 });
