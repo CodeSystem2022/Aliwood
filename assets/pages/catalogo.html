@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel = "stylesheet" href = "../css/catalogo.css">
+    <link rel = "stylesheet" href = "../css/Styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <div class="logo-container">
+
+                <img class="logo-img" src="./assets/img/logo/logo.png" alt="Logo de la página"> <!--Logo de Página-->
+            </div>
+
+            <form action="#"> <!-- Formulario de búsqueda -->
+                <input type="search" class="search-data" placeholder="Buscar" required> <!-- Campo de búsqueda -->
+                <button type="submit"><img src="./assets/img/lupa/lupa.png" alt="" class="image"></button>
+                <!-- Botón de búsqueda -->
+            </form>
+            <div class="menu-icon">
+                <span class="fas fa-bars"></span> <!-- Icono de menú -->
+
+            </div>
+
+            <div class="nav-items"> <!-- Elementos de navegación -->
+
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li class="register"><a href="#">Registro</a class="registro-form"></li>
+                <li><a href="#">Iniciar Sesión</a></li>
+                <li class="cuenta"><a href="#">Mi cuenta</a></li>
+            </div>
+            <div class="search-icon">
+                <span class="fas fa-search"></span><!-- Icono de búsqueda -->
+            </div>
+            <div class="cancel-icon">
+                <span class="fas fa-times"></span><!-- Icono de cancelar -->
+            </div>
+
+        </nav>    
+
+                <!-- Botón de carrito en el header -->
+        <div id="open-cart" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+
+
+    </header>
+
+
+    <div class = "wrapper">
+        <div class = "category-filter">
+            <div class = "container">
+                <div class = "title">
+                  
+                </div>
+
+                <div class = "filter-btns">
+         
+                    <button type = "button" class = "filter-btn" id = "new">Cocina</button>
+                    <button type = "button" class = "filter-btn" id = "best-sellers">Baño</button>
+                    <button type = "button" class = "filter-btn" id = "specials">Living</button>
+                </div>
+
+                <div class = "filter-items">
+                    <div class = "filter-item new">
+                        <div class = "item-img">
+                            <img src = "../img/cocina/cocina1.jpeg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <div>
+                           
+                                <span class = "new-price">$16.70</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item best-sellers">
+                        <div class = "item-img">
+                            <img src = "../img/baño/baño-1.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <div>
+                           
+                                <span class = "new-price">$16.70</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item specials">
+                        <div class = "item-img">
+                            <img src = "../img/living/living1.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <div>
+                              
+                                <span class = "new-price">$16.70</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item specials">
+                        <div class = "item-img">
+                            <img src = "../img/living/living2.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <div>
+                              
+                                <span class = "new-price">$16.70</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class = "filter-item specials">
+                        <div class = "item-img">
+                            <img src = "../img/living/living3.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <div>
+                                <span class = "new-price">$16.70</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class = "filter-item specials">
+                        <div class = "item-img">
+                            <img src = "../img/living/living4.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <div>
+                                <span class = "new-price">$16.70</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class = "filter-item specials">
+                        <div class = "item-img">
+                            <img src = "../img/living/living5.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <div>
+                                <span class = "new-price">$16.70</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="filter-item new">
+                        <div class="item-img">
+                            <img src="../img/cocina/cocina2.jpeg" alt="Item image 1">
+                        </div>
+                        <div class="item-info">
+                            <div>
+                                <span class="new-price">$16.70</span>
+                            </div>
+                            <a href="#" class="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="filter-item new">
+                        <div class="item-img">
+                            <img src="../img/cocina/cocina3.jpeg" alt="Item image 1">
+                        </div>
+                        <div class="item-info">
+                            <div>
+                                <span class="new-price">$16.70</span>
+                            </div>
+                            <a href="#" class="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="filter-item new">
+                        <div class="item-img">
+                            <img src="../img/cocina/cocina-7.jpg" alt="Item image 1">
+                        </div>
+                        <div class="item-info">
+                            <div>
+                                <span class="new-price">$16.70</span>
+                            </div>
+                            <a href="#" class="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="filter-item new">
+                        <div class="item-img">
+                            <img src="../img/cocina/cocina1.jpeg" alt="Item image 1">
+                        </div>
+                        <div class="item-info">
+                            <div>
+                                <span class="new-price">$16.70</span>
+                            </div>
+                            <a href="#" class="add-btn">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="filter-item new">
+                        <div class="item-img">
+                            <img src="../img/cocina/cocina-10.jpg" alt="Item image 1">
+                        </div>
+                        <div class="item-info">
+                            <div>
+                                <span class="new-price">$16.70</span>
+                            </div>
+                            <a href="#" class="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="filter-item best-sellers">
+                        <div class="item-img">
+                            <img src="../img/baño/baño-5.jpeg" alt="Best Seller 1">
+                        </div>
+                        <div class="item-info">
+                            <div>
+                                <span class="new-price">$24.99</span>
+                            </div>
+                            <a href="#" class="add-btn">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="filter-item best-sellers">
+                        <div class="item-img">
+                            <img src="../img/baño/baño-2.jpg" alt="Best Seller 2">
+                        </div>
+                        <div class="item-info">
+                            <div>
+                                <span class="new-price">$35.99</span>
+                            </div>
+                            <a href="#" class="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-item best-sellers">
+                        <div class="item-img">
+                            <img src="../img/baño/baño-3.jpg" alt="Best Seller 2">
+                        </div>
+                        <div class="item-info">
+                            <div>
+                                <span class="new-price">$35.99</span>
+                            </div>
+                            <a href="#" class="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="filter-item best-sellers">
+                        <div class="item-img">
+                            <img src="../img/baño/baño-9-.jpg" alt="Best Seller 2">
+                        </div>
+                        <div class="item-info">
+                            <div>
+                                <span class="new-price">$35.99</span>
+                            </div>
+                            <a href="#" class="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                    
+                    
+
+                    <div class = "filter-item best-sellers">
+                        <div class = "item-img">
+                            <img src = "../img/baño/baño-6.jpeg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <div>
+                                <span class = "new-price">$16.70</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item specials">
+                        <div class = "item-img">
+                            <img src = "../img/living/living6.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <div>
+                                <span class = "new-price">$16.70</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item new">
+                        <div class = "item-img">
+                            <img src = "../img/cocina/cocina-9.jpg" alt = "Item image">
+
+                        </div>
+                        <div class = "item-info">
+                            <div>
+                                <span class = "new-price">$16.70</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item best-sellers">
+                        <div class = "item-img">
+                            <img src = "../img/baño/baño-8.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <div>
+                                <span class = "new-price">$16.70</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item specials">
+                        <div class = "item-img">
+                            <img src = "../img/living/living7.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <div>
+                                <span class = "new-price">$16.70</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item new">
+                        <div class = "item-img">
+                            <img src = "../img/cocina/cocina-8.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                        
+                            <div>
+                                <span class = "new-price">$16.70</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item best-sellers">
+                        <div class = "item-img">
+                            <img src = "../img/baño/baño-4.jpeg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <div>
+                                <span class = "new-price">$16.70</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item  specials">
+                        <div class = "item-img">
+                            <img src = "../img/living/living8.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <div>
+                                <span class = "new-price">$16.70</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-6 col-md">
+            <h5>Detalles de Contactó</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"> <h6>Direccion</h6></li>
+              <li class="mb-1"><p class="link-secondary">Av. Gral. J. J. de Urquiza 314 </p></li>
+              <li class="mb-1"> <h6>Email</h6></li>
+              <li class="mb-1"><p class="link-secondary">Aliwood@gmail.com</p></li>
+              <li class="mb-1"> <h6>Telegram</h6></li>
+              <li class="mb-1"><p class="link-secondary">0260 442-1078</p></li>
+              
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <!-- <h5>Resources</h5> -->
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terminos y condiciones</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Politica de  envios </a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Politica de  Devolucion</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Quienes Somos?</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <!-- <h5>About</h5> -->
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"> <h5>Metodos De Pago</h5></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Mercado Pago</a></li>
+              <li class="mb-1"> <h5>Metodos De  Envios</h5></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Fats</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      
+ 
+    
+    
+    <script src = "../scripts/catalogo.js"></script>
+</body>
+</html>
