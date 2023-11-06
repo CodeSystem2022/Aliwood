@@ -7,13 +7,9 @@
   
 }
 
-/* Estilos para el fondo de toda la página */
-body{
-  background: #f2f2f2;
-}
+
 /* Estilos para barra de navegación */
 nav{
-  background: #101116;
   display: grid;
   flex-wrap: wrap;
   align-items: center;
@@ -21,6 +17,10 @@ nav{
   height: 150px;
   padding: 0 500px;
   margin-left: 27px;
+  position: fixed;
+  top: 5px;
+  z-index: 9999;
+  left: 150px;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
@@ -50,6 +50,9 @@ nav .logo{
   top: 15px;
   
 }
+
+
+
 /* Estilos para ocultar el logotipo en pantallas más pequeñas */
 @media screen and (max-width: 1140px) {  
   .logo-container {  
@@ -160,7 +163,7 @@ nav form .search-data{
 /* Estilos del ícono para el botón de búsqueda */
 .image{
   position:absolute;
-  left:570px;
+  left:510px;
   top: 3%;
   width: 59px;
   height: 47px;
