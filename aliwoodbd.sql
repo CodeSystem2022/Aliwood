@@ -1,27 +1,8 @@
 # Crear la base de datos "aliwoodbd":
-CREATE SCHEMA IF NOT EXISTS `aliwoodbd`
+CREATE SCHEMA IF NOT EXISTS `aliwoodbd`;
 
 # Usar la base de datos "aliwoodbd":
 USE aliwoodbd;
-
-# Crear la tabla "pedidos":
-CREATE TABLE IF NOT EXISTS `aliwoodbd`.`pedidos` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `id_usuario` INT NOT NULL,
-  `fecha_pedido` DATETIME NOT NULL,
-  `total` DOUBLE NOT NULL,
-  `tipo_de_pago` VARCHAR(50) NOT NULL,
-  `estado_de_pago` VARCHAR(50) NULL DEFAULT NULL,
-  `historial_de_estado` VARCHAR(255) NULL DEFAULT NULL,
-  `productos` VARCHAR(255) NULL DEFAULT NULL,
-  PRIMARY KEY (`id`, `id_usuario`),
-  INDEX `id.Usuario_idx` (`id_usuario` ASC) VISIBLE,
-  CONSTRAINT `id.Usuario`
-    FOREIGN KEY (`id_usuario`)
-    REFERENCES `aliwoodbd`.`usuarios` (`id`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci
 
 # Crear la tabla "productos":
 CREATE TABLE IF NOT EXISTS `aliwoodbd`.`productos` (
@@ -35,8 +16,7 @@ CREATE TABLE IF NOT EXISTS `aliwoodbd`.`productos` (
   `disponibilidad` TINYINT NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci
+DEFAULT CHARACTER SET = utf8mb4;
 
 # Crear la tabla "usuarios":
 CREATE TABLE IF NOT EXISTS `aliwoodbd`.`usuarios` (
@@ -51,8 +31,25 @@ CREATE TABLE IF NOT EXISTS `aliwoodbd`.`usuarios` (
   `direccion` VARCHAR(255),
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci
+DEFAULT CHARACTER SET = utf8mb4;
+
+# Crear la tabla "pedidos":
+CREATE TABLE `aliwoodbd`.`pedidos` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `id_usuario` INT NOT NULL,
+  `fecha_pedido` DATETIME NOT NULL,
+  `total` DOUBLE NOT NULL,
+  `tipo_de_pago` VARCHAR(50) NOT NULL,
+  `estado_de_pago` VARCHAR(50) NOT NULL,
+  `historial_de_estado` VARCHAR(255) NULL DEFAULT NULL,
+  `productos` VARCHAR(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  CONSTRAINT `fk_usuario_pedido`
+    FOREIGN KEY (`id_usuario`)
+    REFERENCES `aliwoodbd`.`usuarios` (`id`)
+)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4;
 
 /* Estos algoritmos crearán la base de datos "aliwoodbd" 
 junto con las tablas "usuarios", "productos" y "pedidos", 
