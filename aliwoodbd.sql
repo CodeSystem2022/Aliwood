@@ -25,10 +25,14 @@ CREATE TABLE IF NOT EXISTS `aliwoodbd`.`usuarios` (
   `apellido` VARCHAR(50) NOT NULL,
   `email` VARCHAR(100) NOT NULL,
   `contrasenia` VARCHAR(255) NOT NULL,
+  `dni` VARCHAR(50),
   `fecha_de_registro` DATETIME,
   `fecha_de_nacimiento` DATETIME,
   `numero_de_telefono` VARCHAR(15),
   `direccion` VARCHAR(255),
+  `codigo_postal` VARCHAR(50),
+  `direccion_envio` VARCHAR(255),
+  `preferencia_contacto` VARCHAR(255),
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
