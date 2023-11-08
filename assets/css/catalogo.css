@@ -13,6 +13,7 @@ body{
 .wrapper{
     width: 100%;
     overflow-x: hidden;
+    margin-top: 110px;
 }
 
 .wrapper .container{
@@ -94,6 +95,12 @@ body{
     position: relative;
     overflow: hidden;
 }
+
+.item-img img{
+    width: 500px;
+    height: 300px;
+}
+
 .item-img::after{
     content: "";
     position: absolute;
@@ -185,6 +192,20 @@ body{
     margin-bottom: 40px;
     -webkit-animation: fadeIn 1s;
             animation: fadeIn 1s;
+}
+
+.alineacion{
+    margin-left: 50px;
+}
+
+.ico{
+    z-index: 999;
+}
+
+footer {
+    position: relative;
+    top: 10px;
+    left: 10px;
 }
 
 @-webkit-keyframes fadeIn{
