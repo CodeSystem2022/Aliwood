@@ -35,6 +35,10 @@
     margin-left: 20px;
 }
 
+.ico{
+    z-index: 999;
+}
+
 footer {
     position: relative;
     top: 200px;
