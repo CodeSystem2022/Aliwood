@@ -23,15 +23,13 @@ if(!sessionStorage.getItem("user")) window.location.href = "/assets/pages/formul
 //Obtengo el mail del usuario logueado
 const userMail = sessionStorage.getItem("user");
 
-
-//await fetch(`https://alikeydeploy-production.up.railway.app/personas/${usuario}`)
+//A traves del email del usuario logueado obtengo los datos del mismo y los cargo en el formulario de mi-cuenta.html
 fetch(`http://127.0.0.1:3000/usuarios/${userMail}`)
 .then((response) => response.json())
 .then((data) => {
     if(data.message){
         console.log(`No se encontraron datos`);
     }else{
-        console.log(data);
         id= data.id;
         nombreUsuario.innerHTML = data.nombre + " " + data.apellido;
         nombre.placeholder = data.nombre;
@@ -50,16 +48,18 @@ fetch(`http://127.0.0.1:3000/usuarios/${userMail}`)
     }
 });
 
+//Escucha el evento click del boton cerrar sesion
 sesion.addEventListener("click", function (){
     sessionStorage.removeItem("user");
     window.location.href = "/index.html";
 });
 
+//Escucha el evento click del boton editar
 editar.addEventListener("click", function (){
-    editarUsuario.innerHTML = "Usuario Editado";
 
     if(password.value) contrasenia = password.value;
 
+    //Actualizamos los datos del usuario de los campos que modifico
     fetch(`http://127.0.0.1:3000/usuarios/${id}`, {
           method: "PUT",
           headers: {
@@ -78,12 +78,14 @@ editar.addEventListener("click", function (){
         })
           .then((response) => response.json())
           .then((data) => {
-            warnings = data.message;
+            editarUsuario.innerHTML = "Usuario Editado";
           });
 });
 
+//Escucha el evento click del boton Eliminar Usuario
 userDelete.addEventListener("click", function (){
     
+    //Eliminamos al usuario de la Base de Datos
     fetch(`http://127.0.0.1:3000/usuarios/${id}`, {
         method: 'DELETE',
     })

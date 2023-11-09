@@ -3,7 +3,7 @@ const {createUsuarios, readUsuarios, updateUsuarios, deleteUsuarios} = require('
 
 const router = Router();
 
-
+//Rutas de los endpoints
 router.get('/:email', readUsuarios);
 
 router.post('/', createUsuarios);
