@@ -18,9 +18,9 @@ const readUsuarios = (req, res) => {
 };
 
 const createUsuarios = (req, res) => {
-    const {nombre, apellido, email, contraseña} = req.body;
-    const createQuery = `INSERT INTO usuarios(nombre, apellido, email, contraseña) VALUES(?, ?, ?, ?);`;
-    const query = mysql2.format(createQuery, [nombre, apellido, email, contraseña]);
+    const {nombre, apellido, email, contrasenia} = req.body;
+    const createQuery = `INSERT INTO usuarios(nombre, apellido, email, contrasenia, fecha_de_registro) VALUES(?, ?, ?, ?, current_timestamp());`;
+    const query = mysql2.format(createQuery, [nombre, apellido, email, contrasenia]);
 
     database.query(query, (err, result) => {
         if(err) throw err;
@@ -31,9 +31,9 @@ const createUsuarios = (req, res) => {
 
 const updateUsuarios = (req, res) => {
     const { id } = req.params;
-    const {contraseña} = req.body;
-    const updateQuery = `UPDATE usuarios SET contraseña=? WHERE id=?`;
-    const query = mysql2.format(updateQuery, [contraseña, id]);
+    const {contrasenia, dni, numero_de_telefono, direccion, codigo_postal, direccion_envio, preferencia_contacto, localidad} = req.body;
+    const updateQuery = `UPDATE usuarios SET contrasenia=?, dni=?, numero_de_telefono=?, direccion=?, codigo_postal=?, direccion_envio=?, preferencia_contacto=?, localidad=? WHERE id=?;`;
+    const query = mysql2.format(updateQuery, [contrasenia, dni, numero_de_telefono, direccion, codigo_postal, direccion_envio, preferencia_contacto, localidad, id]);
 
     database.query(query, (err, result) => {
         if(err) throw err;
