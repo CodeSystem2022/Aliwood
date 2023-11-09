@@ -41,3 +41,14 @@ footer {
     
 }
 
+.ico{
+    z-index: 999;
+}
+
+#editarUsuario{
+    cursor: pointer;
+}
+
+.img-lapiz {
+    cursor: pointer;
+}
