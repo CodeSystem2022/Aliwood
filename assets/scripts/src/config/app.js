@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 const usuariosRoutes = require('../routes/usuarios.routes');
+const productosRoutes = require('../routes/productos.routes');
 
 //middlewares
 const app = express();
@@ -11,6 +12,7 @@ app.use(cors());
 
 //endpoints
 app.use('/usuarios', usuariosRoutes);
+app.use('/productos', productosRoutes);
 
 
 module.exports = app;
