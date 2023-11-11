@@ -161,22 +161,7 @@
     bottom: 27px;
     color: #fff;
 }
-.check
-{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    color: #fff;
-}
-.check a
-{
-    text-decoration: none;
-    color: #fff;
-}
-.check a:hover
-{
-    text-decoration: underline;
-}
+
 .login .button
 {
     width: 100%;
@@ -225,12 +210,12 @@ button:active
     }
 
     .content h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
         letter-spacing: 3px;
     }
 
     .content h3 {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .content pre {
