@@ -6,17 +6,53 @@
     <title>Ofertas Especiales</title>
     <link rel="stylesheet" href="../css/ofertas.css">
     <script src="../scripts/contador-tiempo.js"></script>
+    <link rel = "stylesheet" href = "../css/catalogo.css">
+    <link rel = "stylesheet" href = "../css/Styles.css">
+    <link href="../css/ofertas.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/barra-de-navegacion.css">
+    <link rel="stylesheet" href="../css/ico.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     <header>
+
+        <nav>   
+            <div class="logo-container">
+
+                <img class="logo-img" src="../img/logo/logo.png" alt="Logo de la página"> <!--Logo de Página-->
+            </div>
+
+            <form action="#"> <!-- Formulario de búsqueda -->
+                <input type="search" class="search-data" placeholder="Buscar" required> <!-- Campo de búsqueda -->
+                <button type="submit"><img src="../img/lupa/lupa.png" alt="" class="image"></button>
+                <!-- Botón de búsqueda -->
+            </form>
+            <div class="menu-icon">
+                <span class="fas fa-bars"></span> <!-- Icono de menú -->
+            </div>
+            <div class="nav-items"> <!-- Elementos de navegación -->
+
+                <li><a id="inicio" href="">Inicio</a></li>
+                <li><a href="./ofertas.html">Ofertas</a></li>
+                <li><a href="./catalogo.html">Catálogo</a></li>
+                <li class="register"><a href="./registro.html">Registro</a></li>
+                <li><a href="./Inicio3.html">Iniciar Sesión</a></li>
+                <li class="cuenta"><a href="./mi-cuenta.html">Mi cuenta</a></li>
+            </div>
+            <div class="search-icon">
+                <span class="fas fa-search"></span><!-- Icono de búsqueda -->
+            </div>
+            <div class="cancel-icon">
+                <span class="fas fa-times"></span><!-- Icono de cancelar -->
+            </div>
+        </nav>
+        
         <div class="menu container">
-            <a href="/index.html"><img src="../img/logo/logo.png" class="logo"></a>
             <input type="checkbox" id="menu">
             <div class="header-text">
-                <h2>Ofertas Especiales</h2>
+                <h2>OFERTAS ESPECIALES</h2>
             </div>
         </div>
-        
 
         <div class="header-content container">
             <div class="header-text">
