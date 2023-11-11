@@ -18,7 +18,7 @@ let id;
 let contrasenia;
 
 //Si no hay un usuario logueado vuelve a la pantalla de login
-if(!sessionStorage.getItem("user")) window.location.href = "/assets/pages/formulario-inicio-sesion.html";
+if(!sessionStorage.getItem("user")) window.location.href = "/assets/pages/Inicio3.html";
 
 //Obtengo el mail del usuario logueado
 const userMail = sessionStorage.getItem("user");
