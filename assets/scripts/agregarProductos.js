@@ -1,22 +1,14 @@
-// Obtener el elemento con la clase "filter-items"
-/*const filterItemsContainer = document.querySelectorAll('.filter-items');
-// Verifica si se encontró algún elemento
-if (filterItemsContainer) {
-    // La clase "filter-items" fue encontrada, puedes realizar acciones adicionales aquí
-    console.log('Se encontró el elemento con la clase "filter-items"');
-    
-    // Ahora puedes agregar el código dinámico al contenedor
-    // ...
-  
-  } else {
-    // La clase "filter-items" no fue encontrada
-    console.log('No se encontró el elemento con la clase "filter-items"');
-  }
-*/
 const cart = []; // Este es nuestro carrito, un array vacío
 let products = []; // Este es nuestro catálogo, un array vacío
+// Obtener el elemento con la clase "filter-items"
+const filterItemsContainer = document.querySelector(".filter-items");
+const filterItemContainer = document.querySelector(".filter-item");
+const btnCocina = document.getElementById("new");
+const btnBaño = document.getElementById("best-sellers");
+const btnLiving = document.getElementById("specials");
+let cantidadDiv = 0;
 
-export const getProducts = async () => {
+const getProducts = async () => {
   try {
     const response = await fetch(`http://127.0.0.1:3000/productos`);
     const data = await response.json();
@@ -31,84 +23,107 @@ export const getProducts = async () => {
 };
 
 async function findByCategory(categoria) {
-    const categoriaProducto = await getProducts(categoria);
-    const categoriaFiltrada = [];
+  const categoriaProducto = await getProducts(categoria);
+  const categoriaFiltrada = [];
 
-    categoriaProducto.forEach(producto => {
-        // Verificar si el producto pertenece a la categoría deseada
-        if (producto.categoria === categoria) {
-            // Verificar si el producto ya está en la lista por su id
-            const existeEnLista = categoriaFiltrada.some(item => item.id === producto.id);
-            if (!existeEnLista) {
-                // Si el producto no está en la lista, agregarlo
-                categoriaFiltrada.push(producto);
-            }
-        }
-    });
+  categoriaProducto.forEach(producto => {
+      // Verificar si el producto pertenece a la categoría deseada
+      if (producto.categoria === categoria) {
+          // Verificar si el producto ya está en la lista por su id
+          const existeEnLista = categoriaFiltrada.some(item => item.id === producto.id);
+          if (!existeEnLista) {
+              // Si el producto no está en la lista, agregarlo
+              categoriaFiltrada.push(producto);
+          }
+      }
+  });
 
-    console.log(categoriaFiltrada);
+  console.log(categoriaFiltrada);
+
+  return categoriaFiltrada
+
 }
 
-findByCategory("Baño");
-/*
-// Crear un nuevo elemento div con la clase "filter-item new"
-const filterItem = document.createElement("div");
-filterItem.className = "filter-item new";
+async function agregarDiv(categoria){
+  const productosFiltrado = await findByCategory(categoria);
+  cantidadDiv = productosFiltrado.length;
+  for(i=0; i<productosFiltrado.length; i++){
+    const prod = productosFiltrado[i];
+    console.log(prod);
 
-// Crear un nuevo elemento div con la clase "item-img"
-const itemImg = document.createElement("div");
-itemImg.className = "item-img";
+    // Crear un nuevo elemento div con la clase "filter-item new"
+    const filterItem = document.createElement("div");
+    if(prod.categoria === 'Cocina') filterItem.className = "filter-item Cocina";
+    if(prod.categoria === 'Baño') filterItem.className = "filter-item Baño";
+    if(prod.categoria === 'Living') filterItem.className = "filter-item Living";
+    
 
-// Crear un nuevo elemento img con el atributo src y alt
-const img = document.createElement("img");
-img.src = "../img/cocina/cocina1.jpeg";
-img.alt = "Item image";
+    // Crear un nuevo elemento div con la clase "item-img"
+    const itemImg = document.createElement("div");
+    itemImg.className = "item-img";
 
-// Agregar el elemento img al elemento "item-img"
-itemImg.appendChild(img);
+    // Crear un nuevo elemento img con el atributo src y alt
+    const img = document.createElement("img");
+    img.src = prod.imagen;
+    img.alt = "Item image";
 
-// Crear un nuevo elemento div con la clase "item-info"
-const itemInfo = document.createElement("div");
-itemInfo.className = "item-info";
+    // Agregar el elemento img al elemento "item-img"
+    itemImg.appendChild(img);
 
-// Crear un nuevo elemento div dentro de "item-info"
-const divInsideItemInfo = document.createElement("div");
+    // Crear un nuevo elemento div con la clase "item-info"
+    const itemInfo = document.createElement("div");
+    itemInfo.className = "item-info";
 
-// Crear un nuevo elemento span con la clase "new-price"
-const newPrice = document.createElement("span");
-newPrice.className = "new-price";
-newPrice.innerText = "$16.70";
+    // Crear un nuevo elemento div dentro de "item-info"
+    const divInsideItemInfo = document.createElement("div");
 
-// Agregar el elemento span al div dentro de "item-info"
-divInsideItemInfo.appendChild(newPrice);
+    // Crear un nuevo elemento span con la clase "new-price"
+    const newPrice = document.createElement("span");
+    newPrice.className = "new-price";
+    newPrice.innerText = prod.precio;
 
-// Crear un nuevo elemento a con la clase "add-btn" y el texto "Comprar"
-const comprarLink = document.createElement("a");
-comprarLink.href = "#";
-comprarLink.className = "add-btn";
-comprarLink.innerText = "Comprar";
+    // Agregar el elemento span al div dentro de "item-info"
+    divInsideItemInfo.appendChild(newPrice);
 
-// Agregar el div y el enlace al elemento "item-info"
-itemInfo.appendChild(divInsideItemInfo);
-itemInfo.appendChild(comprarLink);
+    // Crear un nuevo elemento a con la clase "add-btn" y el texto "Comprar"
+    const comprarDiv = document.createElement("div");
+    comprarDiv.className = "botones2 d-flex justify-content-center align-items-center mt-2";
 
-// Agregar los elementos "item-img" y "item-info" al elemento "filter-item"
-filterItem.appendChild(itemImg);
-filterItem.appendChild(itemInfo);
+    const comprarLink = document.createElement("a");
+    comprarLink.href = "#";
+    comprarLink.className = "btn-3";
+    comprarLink.innerText = "Comprar";
 
-// Agregar el elemento "filter-item" al contenedor con la clase "filter-items"
-//filterItemsContainer.appendChild(filterItem);
-if (filterItemsContainer.length > 0 && filterItemsContainer[0] instanceof Element) {
-    // Toma el primer elemento de la NodeList
-    const cContainer = containers[0];
-  
-    // La clase "filter-items" fue encontrada, puedes realizar acciones adicionales aquí
-    console.log('Se encontró el elemento con la clase "filter-items"');
-  
-    // Ahora puedes agregar el código dinámico al contenedor
-    container.appendChild(filterItem);
-  
-  } else {
-    // La clase "filter-items" no fue encontrada o el primer elemento no es un nodo Element
-    console.log('No se encontró el elemento con la clase "filter-items" o el primer elemento no es un nodo Element');
-  }*/
+    comprarDiv.appendChild(comprarLink);
+
+    // Agregar el div y el enlace al elemento "item-info"
+    itemInfo.appendChild(divInsideItemInfo);
+    itemInfo.appendChild(comprarLink);
+    itemInfo.appendChild(comprarDiv);
+
+    // Agregar los elementos "item-img" y "item-info" al elemento "filter-item"
+    filterItem.appendChild(itemImg);
+    filterItem.appendChild(itemInfo);
+
+    filterItemsContainer.appendChild(filterItem);
+
+  }
+
+}
+
+agregarDiv("Cocina");
+
+btnBaño.addEventListener("click", function(){
+  filterItemsContainer.innerHTML = ""; // Vaciar el contenedor 
+  agregarDiv("Baño");
+});
+
+btnLiving.addEventListener("click", function(){
+  filterItemsContainer.innerHTML = ""; // Vaciar el contenedor
+  agregarDiv("Living");
+});
+
+btnCocina.addEventListener("click", function(){
+  filterItemsContainer.innerHTML = ""; // Vaciar el contenedor
+  agregarDiv("Cocina");
+});
