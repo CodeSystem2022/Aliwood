@@ -1,3 +1,5 @@
+const hrefRegistro = document.getElementById("idHref");
+const iniSesion = document.getElementById("idSesion");
 const cart = []; // Este es nuestro carrito, un array vacío
 let products = []; // Este es nuestro catálogo, un array vacío
 // Obtener el elemento con la clase "filter-items"
@@ -7,6 +9,13 @@ const btnCocina = document.getElementById("new");
 const btnBaño = document.getElementById("best-sellers");
 const btnLiving = document.getElementById("specials");
 let cantidadDiv = 0;
+
+//Si no hay un usuario logueado vuelve a la pantalla de login
+if(sessionStorage.getItem("user")){
+  iniSesion.innerHTML = '';
+  hrefRegistro.href="/assets/pages/mi-cuenta.html";
+  hrefRegistro.innerHTML = "Mi Cuenta";
+}
 
 const getProducts = async () => {
   try {

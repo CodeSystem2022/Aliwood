@@ -55,7 +55,7 @@ botonLoging.addEventListener("click", async (e) => {
                           });
                             setTimeout(() => {
                                 sessionStorage.setItem("user", data.email);
-                                window.location.href = "/assets/pages/mi-cuenta.html";
+                                window.location.href = "/index.html";
                             }, 2500);
                     }else{
                         warnings = `Usuario o Contraseña incorrecta`;
