@@ -15,7 +15,6 @@ const getProducts = async () => {
 
     products = products.concat(data); // Agrega todos los productos al array
 
-    console.log(products);
     return products;
   } catch (error) {
     console.error("Error al obtener productos:", error);
@@ -38,8 +37,6 @@ async function findByCategory(categoria) {
       }
   });
 
-  console.log(categoriaFiltrada);
-
   return categoriaFiltrada
 
 }
@@ -49,7 +46,6 @@ async function agregarDiv(categoria){
   cantidadDiv = productosFiltrado.length;
   for(i=0; i<productosFiltrado.length; i++){
     const prod = productosFiltrado[i];
-    console.log(prod);
 
     // Crear un nuevo elemento div con la clase "filter-item new"
     const filterItem = document.createElement("div");
