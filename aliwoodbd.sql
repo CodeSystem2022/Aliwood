@@ -1,6 +1,6 @@
 # Crear la base de datos "aliwoodbd":
 CREATE SCHEMA IF NOT EXISTS `aliwoodbd`;
-drop schema `aliwoodbd`;
+
 # Usar la base de datos "aliwoodbd":
 USE aliwoodbd;
 
