@@ -85,8 +85,7 @@ async function agregarDiv(categoria){
     const comprarDiv = document.createElement("div");
     comprarDiv.className = "botones2 d-flex justify-content-center align-items-center mt-2";
 
-    const comprarLink = document.createElement("a");
-    comprarLink.href = "#";
+    const comprarLink = document.createElement("button");
     comprarLink.className = "btn-3";
     comprarLink.innerText = "Comprar";
 
@@ -103,6 +102,30 @@ async function agregarDiv(categoria){
 
     filterItemsContainer.appendChild(filterItem);
 
+    // Agregar un evento al botón "Comprar"
+    comprarLink.addEventListener("click", () => {
+      const repeat = cart.some(
+        (repeatProduct) => repeatProduct.id === prod.id
+      );
+    
+      if (repeat) {
+          cart.map((produ) => {
+              if (produ.id === prod.id) {
+              produ.cantidad ++;
+              displayCartCounter();
+              }
+          });
+      } else {
+          cart.push({
+              id: prod.id,
+              nombre: prod.nombre,
+              precio: prod.precio,
+              cantidad: prod.cantidad,
+              imagen: prod.imagen,
+          });
+          displayCartCounter();
+      }
+    });
   }
 
 }
