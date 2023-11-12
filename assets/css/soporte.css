@@ -1,0 +1,36 @@
+
+.nab {
+    position: absolute;
+    left: 450px;
+}
+.nav-items{
+    margin-top: 25px;
+}
+
+.image {
+    margin-left: 50px;
+}
+
+#soporte {
+    margin-left: 300px;
+    margin-bottom: 30px;
+    width: calc(100%);
+}
+
+.alineamiento{
+    margin-top: 200px;
+    width: calc(70%);
+    margin-left: 150px;
+}
+.alineacion { 
+    margin-left: 20px;
+}
+
+.ico{
+    z-index: 999;
+}
+
+footer {
+    position: relative;
+    top: 10px;
+}
