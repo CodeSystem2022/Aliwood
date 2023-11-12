@@ -119,7 +119,7 @@ form.addEventListener("submit", async (e) => {
           timer: 2500,
         });
         setTimeout(() => {
-          window.location.href = "/assets/pages/formulario-inicio-sesion.html";
+          window.location.href = "/assets/pages/Inicio3.html";
         }
         , 2500);
       }
