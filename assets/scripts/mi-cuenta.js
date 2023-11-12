@@ -1,3 +1,5 @@
+const hrefRegistro = document.getElementById("idHref");
+const iniSesion = document.getElementById("idSesion");
 const sesion = document.getElementById("cerrarSesion");
 const userDelete = document.getElementById("delUser");
 const nombreUsuario = document.getElementById("nombreUsuario");
@@ -19,6 +21,13 @@ let contrasenia;
 
 //Si no hay un usuario logueado vuelve a la pantalla de login
 if(!sessionStorage.getItem("user")) window.location.href = "/assets/pages/Inicio3.html";
+
+//Si no hay un usuario logueado vuelve a la pantalla de login
+if(sessionStorage.getItem("user")){
+    iniSesion.innerHTML = '';
+    hrefRegistro.href="/assets/pages/mi-cuenta.html";
+    hrefRegistro.innerHTML = "Mi Cuenta";
+}
 
 //Obtengo el mail del usuario logueado
 const userMail = sessionStorage.getItem("user");
