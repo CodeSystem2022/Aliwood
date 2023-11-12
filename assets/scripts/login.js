@@ -1,8 +1,9 @@
 const mail = document.getElementById("email");
 const pass = document.getElementById("password");
+const botonLoging = document.getElementById("btnLogin");
 
 //Se escucha el evento submit del formulario-inicio-sesion.html
-form.addEventListener("submit", async (e) => {
+botonLoging.addEventListener("click", async (e) => {
     
     e.preventDefault();
     let warnings = "";

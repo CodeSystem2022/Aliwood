@@ -43,42 +43,39 @@ body{
 
 
 
-.filter-btn{
-    color: #ececec;
-	padding: 1.2rem 3rem;
-	border-radius: 1rem;
-	margin-top: 1rem;
-	font-size: 33px;
-	transition: all 0.2s;
-    padding: 1.2rem 3rem;
-    border-radius: 1rem;
-    margin-left: 0px;
+.filter-btn {
+    color: #fff;
+    padding: 0.8rem 2rem; 
+    border-radius: 0.5rem; 
+    margin-top: 1rem;
+    font-size: 24px; 
+    transition: all 0.2s;
     background-color: #24252A;
-	display: inline-block;
-
-
+    display: inline-block;
+    position: relative; 
+    overflow: hidden; 
 }
-.filter-btn::after{
-    
+
+.filter-btn::after {
+    content: ''; 
     position: absolute;
     top: 110%;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     height: 2px;
     width: 0;
     background-color: #555;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out
+    transition: all 0.2s ease-in-out;
 }
-.filter-btn:hover{
-    background: linear-gradient(to bottom, #FF5F5F, #E70B25); 
+
+.filter-btn:hover {
+    background: linear-gradient(to bottom, #FF5F5F, #E70B25);
 }
-.filter-btn:hover::after{
+
+.filter-btn:hover::after {
     width: 100%;
 }
+
 /* active button */
 .active-btn{
     color: #FDFDFD;
@@ -152,9 +149,9 @@ body{
     display: inline-block;
     margin-left: 6px;
     font-weight: 600;
-    color: #f53939;
+    color: #fdfdfd;
 }
-.add-btn{
+/*.add-btn{
     display: inline-block;
     margin-top: 20px;
     background-color: #00BF63;
@@ -171,7 +168,7 @@ body{
     border-color: #101116;
     background-color: #fff;
     color: #95bf47;
-}
+}*/
 
 
 .filter-items{

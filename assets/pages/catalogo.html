@@ -19,6 +19,11 @@
   </head>
   <body>
     <header>
+        <nav>   
+            <div class="logo-container">
+
+                <img class="logo-img" src="../img/logo/logo.png" alt="Logo de la página"> <!--Logo de Página-->
+            </div>
       <nav>
         <div class="logo-container">
           <img
@@ -29,41 +34,31 @@
           <!--Logo de Página-->
         </div>
 
-        <form action="#">
-          <!-- Formulario de búsqueda -->
-          <input
-            type="search"
-            class="search-data"
-            placeholder="Buscar"
-            required
-          />
-          <!-- Campo de búsqueda -->
-          <button type="submit">
-            <img src="../img/lupa/lupa.png" alt="" class="image" />
-          </button>
-          <!-- Botón de búsqueda -->
-        </form>
-        <div class="menu-icon">
-          <span class="fas fa-bars"></span>
-          <!-- Icono de menú -->
-        </div>
-        <div class="nav-items">
-          <li><a id="inicio" href="">Inicio</a></li>
-          <li><a href="./ofertas.html">Ofertas</a></li>
-          <li><a href="./catalogo.html">Catálogo</a></li>
-          <li class="register"><a href="./registro.html">Registro</a></li>
-          <li><a href="./Inicio3.html">Iniciar Sesión</a></li>
-          <li class="cuenta"><a href="./mi-cuenta.html">Mi cuenta</a></li>
-        </div>
-        <div class="search-icon">
-          <span class="fas fa-search"></span
-          ><!-- Icono de búsqueda -->
-        </div>
-        <div class="cancel-icon">
-          <span class="fas fa-times"></span
-          ><!-- Icono de cancelar -->
-        </div>
-      </nav>
+            <form action="#"> <!-- Formulario de búsqueda -->
+                <input type="search" class="search-data" placeholder="Buscar" required> <!-- Campo de búsqueda -->
+                <button type="submit"><img src="../img/lupa/lupa.png" alt="" class="image"></button>
+                <!-- Botón de búsqueda -->
+            </form>
+            <div class="menu-icon">
+                <span class="fas fa-bars"></span> <!-- Icono de menú -->
+            </div>
+            <div class="nav-items"> 
+
+                <li><a id="inicio" href="">Inicio</a></li>
+                <li><a href="./ofertas.html">Ofertas</a></li>
+                <li><a href="./catalogo.html">Catálogo</a></li>
+                <li class="register"><a href="./registro.html">Registro</a></li>
+                <li><a href="./Inicio3.html">Iniciar Sesión</a></li>
+                <li class="cuenta"><a href="./mi-cuenta.html">Mi cuenta</a></li>
+            </div>
+            <div class="search-icon">
+                <span class="fas fa-search"></span><!-- Icono de búsqueda -->
+            </div>
+            <div class="cancel-icon">
+                <span class="fas fa-times"></span><!-- Icono de cancelar -->
+            </div>
+
+        </nav>    
 
       <!-- Botón de carrito en el header -->
       <div id="open-cart" class="cart-icon">
@@ -72,121 +67,71 @@
     </header>
 
     <main>
-      <div class="wrapper">
-        <div class="category-filter">
-          <div class="container">
-            <div class="title"></div>
-
-            <div class="filter-btns">
-              <button type="button" class="filter-btn" id="new">Cocina</button>
-              <button type="button" class="filter-btn" id="best-sellers">
-                Baño
-              </button>
-              <button type="button" class="filter-btn" id="specials">
-                Living
-              </button>
+        <div class = "wrapper">
+            <div class = "category-filter">
+                <div class = "container">
+                    <div class = "title">
+                      
+                    </div>
+    
+                    <div class = "filter-btns">
+             
+                        <button type = "button" class = "filter-btn" id = "new">Cocina</button>
+                        <button type = "button" class = "filter-btn" id = "best-sellers">Baño</button>
+                        <button type = "button" class = "filter-btn" id = "specials">Living</button>
+                    </div>
+    
+                    <div class = "filter-items">
+                        
+                    </div>
+                </div>
             </div>
-            <!-- Prodducto 1 -->
-            <div class="filter-items">
-                
+        </div>
+        <div class="ico">
+            <div >
+                <a href="./soporte.html"><img class="ico-1" src="../img/ico/apoyo-tecnico.png" alt="apoyo tecnico" width="70"></a>
+                <a href=""><img class="ico-2" src="../img/ico/whatsapp.png" alt="whatsapp" width="60"></a>
+                <i><a href=""></a></i>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="ico">
-        <div>
-          <a href="./soporte.html"
-            ><img
-              class="ico-1"
-              src="../img/ico/apoyo-tecnico.png"
-              alt="apoyo tecnico"
-              width="70"
-          /></a>
-          <a href=""
-            ><img
-              class="ico-2"
-              src="../img/ico/whatsapp.png"
-              alt="whatsapp"
-              width="60"
-          /></a>
-          <i><a href=""></a></i>
-        </div>
-      </div>
+        <script src = "../scripts/catalogo.js"></script>
     </main>
 
-    
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h5 class="text-center">Detalles de Contacto</h5>
-            <ul class="list-unstyled text-center">
-              <li class="mb-1">
-                <h6>Direccion</h6>
-              </li>
-              <li class="mb-1">
-                <p class="link-secondary">Av. Gral. J. J. de Urquiza 314</p>
-              </li>
-              <li class="mb-1">
-                <h6>Email</h6>
-              </li>
-              <li class="mb-1">
-                <p class="link-secondary">Aliwood@gmail.com</p>
-              </li>
-              <li class="mb-1">
-                <h6>Telegram</h6>
-              </li>
-              <li class="mb-1">
-                <p class="link-secondary">0260 442-1078</p>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-unstyled text-center">
-              <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Terminos y condiciones</a
-                >
-              </li>
-              <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Politica de envios
-                </a>
-              </li>
-              <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Politica de Devolucion</a
-                >
-              </li>
-              <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Quienes Somos?</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-unstyled text-center">
-              <li class="mb-1">
-                <h5>Metodos De Pago</h5>
-              </li>
-              <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Mercado Pago</a
-                >
-              </li>
-              <li class="mb-1">
-                <h5>Metodos De Envios</h5>
-              </li>
-              <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#">Fats</a>
-              </li>
-            </ul>
-          </div>
+        <div class="alineacion">
+            <div class="row">
+                <div class="col-6 col-md">
+                  <h5>Detalles de Contactó</h5>
+                  <ul class="list-unstyled text-small">
+                    <li class="mb-1"> <h6>Direccion</h6></li>
+                    <li class="mb-1"><p class="link-secondary">Av. Gral. J. J. de Urquiza 314 </p></li>
+                    <li class="mb-1"> <h6>Email</h6></li>
+                    <li class="mb-1"><p class="link-secondary">Aliwood@gmail.com</p></li>
+                    <li class="mb-1"> <h6>Telegram</h6></li>
+                    <li class="mb-1"><p class="link-secondary">0260 442-1078</p></li>
+                    
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terminos y condiciones</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Politica de  envios </a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Politica de  Devolucion</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Quienes Somos?</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <ul class="list-unstyled text-small">
+                    <li class="mb-1"> <h5>Metodos De Pago</h5></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Mercado Pago</a></li>
+                    <li class="mb-1"> <h5>Metodos De  Envios</h5></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Fats</a></li>
+                  </ul>
+                </div>
+              </div>
         </div>
-      </div>
-    </footer>
-    <script src="../scripts/catalogo.js"></script>
-    <script src="../scripts/agregarProductos.js"></script>
-  </body>
+        
+      </footer>
+
+</body>
 </html>
