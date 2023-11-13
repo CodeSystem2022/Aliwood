@@ -1,3 +1,5 @@
+const hrefRegistro = document.getElementById("idHref");
+const iniSesion = document.getElementById("idSesion");
 const cart = []; // Este es nuestro carrito, un array vacío
 let products = []; // Este es nuestro catálogo, un array vacío
 // Obtener el elemento con la clase "filter-items"
@@ -7,6 +9,13 @@ const btnCocina = document.getElementById("new");
 const btnBaño = document.getElementById("best-sellers");
 const btnLiving = document.getElementById("specials");
 let cantidadDiv = 0;
+
+//Si no hay un usuario logueado vuelve a la pantalla de login
+if(sessionStorage.getItem("user")){
+  iniSesion.innerHTML = '';
+  hrefRegistro.href="/assets/pages/mi-cuenta.html";
+  hrefRegistro.innerHTML = "Mi Cuenta";
+}
 
 const getProducts = async () => {
   try {
@@ -85,8 +94,7 @@ async function agregarDiv(categoria){
     const comprarDiv = document.createElement("div");
     comprarDiv.className = "botones2 d-flex justify-content-center align-items-center mt-2";
 
-    const comprarLink = document.createElement("a");
-    comprarLink.href = "#";
+    const comprarLink = document.createElement("button");
     comprarLink.className = "btn-3";
     comprarLink.innerText = "Comprar";
 
@@ -103,6 +111,30 @@ async function agregarDiv(categoria){
 
     filterItemsContainer.appendChild(filterItem);
 
+    // Agregar un evento al botón "Comprar"
+    comprarLink.addEventListener("click", () => {
+      const repeat = cart.some(
+        (repeatProduct) => repeatProduct.id === prod.id
+      );
+    
+      if (repeat) {
+          cart.map((produ) => {
+              if (produ.id === prod.id) {
+              produ.cantidad ++;
+              displayCartCounter();
+              }
+          });
+      } else {
+          cart.push({
+              id: prod.id,
+              nombre: prod.nombre,
+              precio: prod.precio,
+              cantidad: prod.cantidad,
+              imagen: prod.imagen,
+          });
+          displayCartCounter();
+      }
+    });
   }
 
 }
