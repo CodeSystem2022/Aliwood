@@ -45,7 +45,7 @@
 
 .modal-container{
     display: none;
-    background-color: #ffffff;
+    background-color: #4b4b4f;
     box-shadow: 0px 3px 6px #00000029;
     padding: 40px;
     position: absolute;
@@ -113,7 +113,7 @@
 
 .quantity-btn-decrese,
 .quantity-btn-increse{
-    color: #333333;
+    color: #e7e6e6;
     cursor: pointer;
     font-size: 16px;
     width: 28px;
@@ -121,7 +121,7 @@
 }
 
 .quantity-input{
-    color: #333333;
+    color: #e7e6e6;
     font-size: 16px;
     padding: 10 10px;
     text-align: center; 
@@ -130,6 +130,7 @@
 }
 
 .price{
+    color: #e7e6e6;
     font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
@@ -148,8 +149,7 @@
 .total-price{
     font-size: 20px;
     font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin: 20px 20px 10px 0 !important;
 }
 
 .btn-primary{
