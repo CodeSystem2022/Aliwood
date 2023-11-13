@@ -1,0 +1,54 @@
+
+.form-control {
+    width: 60%; 
+    background-color: rgba(204, 201, 201, 0.897);
+  }
+  .container {
+    color: white;
+
+  }
+  .Usuario {
+    color: white;
+
+  }
+
+.miuser {
+    position: relative;
+    top: 200px;
+    left: 120px;
+}
+
+.nab {
+    position: absolute;
+    left: 450px;
+    
+}
+.nav-items{
+    margin-top: 25px;
+}
+
+.image {
+    margin-left: 50px;
+}
+
+.alineacion { 
+    margin-left: 20px;
+}
+
+footer {
+    position: relative;
+    top: 200px;
+    
+}
+
+.ico{
+    z-index: 999;
+}
+
+#editarUsuario{
+    cursor: pointer;
+}
+
+.img-lapiz {
+    cursor: pointer;
+}

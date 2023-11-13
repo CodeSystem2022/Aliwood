@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.home
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 75%;
+    transform: translate(-50%, -50%);
+    background-image: url('../img/decorar-cocinas-rusticas-con-isla.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 10px 10px 0;
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 100px 0;
+}
+.content a
+{
+    
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 2px 2px 0 black;
+    color: #fff;
+    font-size: 5em;
+    font-weight: 700;
+    top: -40px;
+    left: 80px;
+}
+.content h2
+{
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 0 black;
+    color: #fff;
+    letter-spacing: 10px;
+}
+.content h3
+{
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 2px 0 black;
+    color: #fff;
+}
+.content pre
+{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+}
+.content .icon
+{
+    margin-top: 20px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+.content .icon i
+{
+    margin-left: 20px;
+    color: #fff;
+}
+.login
+{
+    width: 500px;
+    color: #fff;
+    text-shadow: 2px 2px 0 black;
+    text-align: center;
+    position: relative;
+    padding: 100px 30px;
+    backdrop-filter: blur(10px);
+}
+.header
+{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    align-items: center;
+    z-index: 99;
+    background: transparent;
+}
+.header .nav a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+.nav a:hover
+{
+    border-bottom: 4px solid #fff;
+    transition: 5s;
+}
+
+.search i
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+.background
+{
+    width: 100%;
+    height: 100vh;
+    background: #14181f;
+    
+}
+.login .input
+{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 40px;
+}
+.login .input .input1
+{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+::placeholder
+{
+    color: #fff;
+    font-size: 18px;
+}
+.login .input i
+{
+    position: relative;
+    right: -170px;
+    bottom: 27px;
+    color: #fff;
+}
+
+.login .button
+{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+}
+button
+{
+    width: 50%;
+    height: 40px;
+    background-color: rgb(66, 44, 48);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 7px;
+    color: #fff;
+}
+button:active
+{
+    font-size: 25px;
+}
+.login .sign-up
+{
+    display: flex;
+    justify-content: center;    
+}
+.login .sign-up a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+.login .sign-up p
+{
+    color: #fff;
+}
+.sign-up a:hover
+{
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .content a {
+        font-size: 2em;
+        top: -20px;
+    }
+
+    .content h2 {
+        font-size: 1.3em;
+        letter-spacing: 3px;
+    }
+
+    .content h3 {
+        font-size: 1.1em;
+    }
+
+    .content pre {
+        margin-top: 10px;
+        font-size: 1em;
+    }
+
+    .content .icon i {
+        font-size: 1.2em;
+        margin: 0 10px;
+    }
+
+    .login {
+        width: 90%;
+    }
+
+    .login .input i {
+        right: -50px;
+        bottom: 5px;
+    }
+
+    .header .nav {
+        display: none;
+    }
+
+    .search {
+        justify-content: center;
+    }
+
+    .search i {
+        margin: 0 10px;
+    }
+
+    .search #search-box {
+        display: none;
+    }
+
+    .header {
+        padding: 10px 2%;
+    }
+}

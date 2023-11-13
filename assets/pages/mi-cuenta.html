@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/Styles.css"><!-- Hoja de estilos general -->
+    <link rel="stylesheet" href="../css/mi-cuenta.css">
+    <link rel="stylesheet" href="../css/barra-de-navegacion.css">
+    <link rel="stylesheet" href="../css/ico.css">
+    <link rel="shortcut icon" href="../img/logo/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav >
+            <div class="nab">
+                <div class="logo-container">
+
+                    <img class="logo-img" src="../img/logo/logo.png" alt="Logo de la página"> <!--Logo de Página-->
+                </div>
+    
+                <form action="#"> <!-- Formulario de búsqueda -->
+                    <input type="search" class="search-data" placeholder="Buscar" required> <!-- Campo de búsqueda -->
+                    <button type="submit"><img src="../img/lupa/lupa.png" alt="" class="image"></button>
+                    <!-- Botón de búsqueda -->
+                </form>
+                <div class="menu-icon">
+                    <span class="fas fa-bars"></span> <!-- Icono de menú -->
+    
+                </div>
+    
+                <div class="nav-items"> <!-- Elementos de navegación -->
+    
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="./ofertas.html">Ofertas</a></li>
+                    <li><a href="./catalogo.html">Catálogo</a></li>
+                    <li class="register"><a id="idHref" href="./registro.html">Registro</a></li>
+                    <li id="idSesion"><a href="./Inicio3.html">Iniciar Sesión</a></li>
+                    <li class="cuenta"><a href="./mi-cuenta.html">Mi cuenta</a></li>
+                </div>
+                <div class="search-icon">
+                    <span class="fas fa-search"></span><!-- Icono de búsqueda -->
+                </div>
+                <div class="cancel-icon">
+                    <span class="fas fa-times"></span><!-- Icono de cancelar -->
+                </div>
+            </div>
+            
+        </nav>
+       
+
+    </header>
+    <main class="miuser">
+        <div class="Usuario">
+            <div class="row mt-3">
+                <div class="col-2 d-flex justify-content-end align-items-center">
+                    <img src="../img/imagen-usuario.png" alt="Imagen 1" class="img-user" style="width: 30px;" id="imgUsuario">
+                </div>
+                <div class="col">
+                    <p class="mb-0" id="nombreUsuario">Nombre de Usuario</p>
+                </div>
+                <div id="editar" class="col d-flex align-items-center">
+                    <img src="../img/lapiz.png" alt="Imagen 2" class="img-lapiz" style="width: 30px;" id="imgEditar">
+                    <p class="mb-0 ms-2"id="editarUsuario">Editar</p>
+                </div>
+            </div>
+        </div>
+        
+    
+       <div class="container"> 
+            <form class="row g-3 mx-5 mt-3">
+                <div class="col-6">
+                    <label for="nombreInput" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombreInput" readonly>
+                </div>
+                <div class="col-6">
+                    <label for="emailInput" class="form-label">Email</label>
+                    <input type="email" class="form-control " id="emailInput" readonly>
+                </div>
+                <div class="col-6">
+                    <label for="apellidoInput" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellidoInput" readonly>
+                </div>
+                <div class="col-6">
+                    <label for="inputPass" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPass" >
+                </div>
+                
+                <div class="col-8 offset-4 text-start"  style="margin-top: 80px;">
+                    <label for="inputPerfil" class="form-label">Datos de Perfil</label>
+                </div>
+                <div class="col-6">
+                    <label for="codigoPostalInput" class="form-label">Código Postal</label>
+                    <input type="text" class="form-control" id="codigoPostalInput" >
+                </div>
+                <div class="col-6">
+                    <label for="celularInput" class="form-label">Celular</label>
+                    <input type="text" class="form-control" id="celularInput" >
+                </div>
+                <div class="col-6">
+                    <label for="direccionInput" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="direccionInput" >
+                </div>
+                <div class="col-6">
+                    <label for="dniInput" class="form-label">DNI</label>
+                    <input type="text" class="form-control" id="dniInput" >
+                </div>
+                <div class="col-6">
+                    <label for="direccionEnvioInput" class="form-label">Dirección de Envío</label>
+                    <input type="text" class="form-control" id="direccionEnvioInput" >
+                </div>
+                <div class="col-6">
+                    <label for="preferenciasContactoInput" class="form-label">Preferencias de Contacto</label>
+                    <input type="text" class="form-control" id="preferenciasContactoInput" >
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="col-6">
+                        <label for="localidadInput" class="form-label">Localidad</label>
+                        <input type="text" class="form-control" id="localidadInput" >
+                    </div>
+                </div>
+    
+                <div class="col-6">
+                    <label for="cerrarSesion" class="form-label"></label>
+                    <div class="d-flex">
+                        <button id="cerrarSesion" type="button" class="btn btn-primary me-2">Cerrar Sesión</button>
+                    </div>
+                </div>
+                <div class="col-6" style="margin-bottom: 50px;">
+                    <label for="eliminarCuenta" class="form-label"></label>
+                    <div class="d-flex">
+                        <button id="delUser" type="button" class="btn btn-danger">Eliminar Cuenta</button>
+                    </div>
+                </div>
+    
+    
+    
+    
+            </form>
+       </div>
+       <div class="ico">
+            <div >
+                <a href=""><img class="ico-1" src="../img/ico/apoyo-tecnico.png" alt="apoyo tecnico" width="70"></a>
+                <a href=""><img class="ico-2" src="../img/ico/whatsapp.png" alt="whatsapp" width="60"></a>
+                <i><a href=""></a></i>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="alineacion">
+            <div class="row">
+                <div class="col-6 col-md">
+                  <h5>Detalles de Contactó</h5>
+                  <ul class="list-unstyled text-small">
+                    <li class="mb-1"> <h6>Direccion</h6></li>
+                    <li class="mb-1"><p class="link-secondary">Av. Gral. J. J. de Urquiza 314 </p></li>
+                    <li class="mb-1"> <h6>Email</h6></li>
+                    <li class="mb-1"><p class="link-secondary">Aliwood@gmail.com</p></li>
+                    <li class="mb-1"> <h6>Telegram</h6></li>
+                    <li class="mb-1"><p class="link-secondary">0260 442-1078</p></li>
+                    
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="./terminos-y-condiciones.html">Terminos y condiciones</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="./politica-de-envios.html">Politica de  envios </a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="./politica-de-devolucion.html">Politica de  Devolucion</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="./soporte.html">Soporte</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <ul class="list-unstyled text-small">
+                    <li class="mb-1"> <h5>Metodos De Pago</h5></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Mercado Pago</a></li>
+                    <li class="mb-1"> <h5>Metodos De  Envios</h5></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Fats</a></li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+       
+      </footer>
+    
+      <script src="/assets/scripts/mi-cuenta.js"></script>
+</body>
+</html>

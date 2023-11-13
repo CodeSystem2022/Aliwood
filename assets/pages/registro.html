@@ -1,65 +1,104 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Iniciar Sesión</title>
+    <title>Registro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="../css/registro.css" rel="stylesheet"/>
     <link href="../css/Styles.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="../img/logo/logo.png" type="image/x-icon">
   </head>
+
   <body class="bg-dark">
-        <div class="row g-0 ">
-            <div class="col-lg-6 ">
-              
-                <div class="content col-lg-8  flex-column "></div>
-               
-                <div class="content-details align-items-center text-end d-none d-md-block">
-                  <h3 class="content-title text-center font-weight-bold mb-4" >¿Quienes somos?</h3>
-                  <p class="content-text text-center " >Somos Aliwood una empresa con mas de 20 años
-                    de trayectoria en el mercado, nos dedicamos a la venta de diferentes tipos
-                    de muebles de algarrobo, con envio a toda la provincia.
-                    </p>
-              
-              </div>
-                
-            </div>
-            <div class="col-lg-6 d-flex flex-column align-items-end min-vh-100">        
-            <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100 mb-auto">
-
-            <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
-                <h1 class="font-weight-bold mb-4"> Regístrate </h1>
-                <form class="nb-5">
-                    <div class="mb-4">
-                        <label for="exampleInputName" class="form-label font-weight-bold">Nombre </label>
-                        <input type="text" class="form-control bg-dark-x border-0" name="nombre" placeholder="Nombre">           
-                      </div>
-                      <div class="mb-4">
-                        <label for="exampleInputName" class="form-label font-weight-bold">Apellido </label>
-                        <input type="text" class="form-control bg-dark-x border-0" name="Apellido" placeholder="Apellido">           
-                      </div>
-                      <div class="mb-4">
-                        <label for="exampleInputEmail1" class="form-label font-weight-bold">Email </label>
-                        <input type="email" class="form-control bg-dark-x border-0" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      </div>
-                      <div class="mb-4">
-                        <label for="exampleInputPassword1" class="form-label font-label font-weight-bold">Contraseña</label>
-                        <input type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Contraseña" id="exampleInputPassword1">
-                        
-                      </div>
-                    <div class="mb-4">
-                      <label for="exampleInputPassword2" class="form-label font-label font-weight-bold">Confirmar contraseña</label>
-                      <input type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Confirmar contraseña" id="exampleInputPassword1">
-                      <p class="d-inline-block mb-0">¿Ya eres miembro? </p> <a href="#" id="emailHelp" class="text-light font-weight-bold text-wight-bold ">Ingresa aquí</a>
-
-                    </div>
-                   
-                    <button type="submit" class="btn btn-primary w-100">Regístrate</button>
-                  </form>
-            </div>
-
-
+    <main>
+      <div class="row g-0 " >
+        <div class="col-lg-6 " id="parrafo">
+          
+            <div class="content col-lg-8  flex-column "></div>
+           
+            <div class="content-details align-items-center text-end d-none d-md-block">
+              <h3 class="content-title text-center font-weight-bold mb-4" >¿Quienes somos?</h3>
+              <p class="content-text text-center " >Somos Aliwood una empresa con mas de 20 años
+                de trayectoria en el mercado, nos dedicamos a la venta de diferentes tipos
+                de muebles de algarrobo, con envio a toda la provincia.
+                </p>
+          </div>
         </div>
-    </section>
+        <div class="col-lg-6 d-flex flex-column align-items-end min-vh-100">        
+        <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100 mb-auto">
+
+          <div class="img-form">
+            <img src="../img/form/img-form.webp" alt="">
+          </div>
+        <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center" id="regis">
+            <h1 class="font-weight-bold mb-4"> Regístrate </h1>
+            <form id="form" class="nb-5">
+                <div class="mb-4">
+                    <label for="InputName" class="form-label font-weight-bold">Nombre </label>
+                    <input type="text" class="form-control bg-dark-x border-0" name="nombre" placeholder="Nombre" id="InputName">           
+                  </div>
+                  <div class="mb-4">
+                    <label for="InputLastName" class="form-label font-weight-bold">Apellido </label>
+                    <input type="text" class="form-control bg-dark-x border-0" name="Apellido" placeholder="Apellido" id="InputLastName">           
+                  </div>
+                  <div class="mb-4">
+                    <label for="InputEmail" class="form-label font-weight-bold">Email </label>
+                    <input type="email" class="form-control bg-dark-x border-0" placeholder="Email" id="InputEmail" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-4">
+                    <label for="InputPassword" class="form-label font-label font-weight-bold">Contraseña</label>
+                    <input type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Contraseña" id="InputPassword">
+                    
+                  </div>
+                <div class="mb-4">
+                  <label for="InputConfirmPassword" class="form-label font-label font-weight-bold">Confirmar contraseña</label>
+                  <input type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Confirmar contraseña" id="InputConfirmPassword">
+                  <p class="d-inline-block mb-0">¿Ya eres miembro? </p> <a href="/assets/pages/Inicio3.html" id="emailHelp" class="text-light font-weight-bold text-wight-bold ">Ingresa aquí</a>
+
+                </div>
+               
+                <button type="submit" class="btn btn-primary w-100">Regístrate</button>
+              </form>
+        </div>
+    </div>
+    </main>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row" id="footer-2">
+        <div class="col-6 col-md">
+          <h5>Detalles de Contactó</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"> <h6>Direccion</h6></li>
+            <li class="mb-1"><p class="link-secondary">Av. Gral. J. J. de Urquiza 314 </p></li>
+            <li class="mb-1"> <h6>Email</h6></li>
+            <li class="mb-1"><p class="link-secondary">Aliwood@gmail.com</p></li>
+            <li class="mb-1"> <h6>Telegram</h6></li>
+            <li class="mb-1"><p class="link-secondary">0260 442-1078</p></li>
+            
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="./terminos-y-condiciones.html">Terminos y condiciones</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="./politica-de-envios.html">Politica de  envios </a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="./politica-de-devolucion.html">Politica de  Devolucion</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="./soporte.html">Soporte</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"> <h5>Metodos De Pago</h5></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Mercado Pago</a></li>
+            <li class="mb-1"> <h5>Metodos De  Envios</h5></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Fats</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+       
+    <script src="/assets/scripts/registro.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

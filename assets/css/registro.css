@@ -1,20 +1,31 @@
 :root{
-    --dark:  #101116;
-    --dark-x: #6c7482;
     --light: #ffffff;
-
-
 }
+
 body{
     font-family: 'League Spartan', sans-serif;
     font-weight:300;
     color: var(--light);
+}
 
+#parrafo {
+    position: relative;
+    top: 70vh;
+}
 
+#regis {
+    position: relative;
+    top: 10vh;
+}
+
+.img-form{
+    position: relative;
+    top: 20vh;
+    width: 50px;
+    height: 50px;
+    right: 70vh;
 
 }
-.bg-dark { background-color: var(--dark) !important;}
-.bg-dark-x{ background-color: var(--dark-x) !important;}
 
 .form-control, btn{
     min-height: 3125res;
@@ -23,4 +34,15 @@ body{
 .content{
     margin-top: 60px;
    
+}
+
+footer {
+    position: absolute;
+     top: 129vh;
+    width: calc(100%);
+   
+}
+
+#footer-2 {
+    margin-left: 3vh;
 }

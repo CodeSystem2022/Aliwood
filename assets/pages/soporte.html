@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/Styles.css"><!-- Hoja de estilos general -->
+    <link rel="stylesheet" href="../css/barra-de-navegacion.css">
+    <link rel="stylesheet" href="../css/soporte.css">
+    <link rel="stylesheet" href="../css/ico.css">
+    <link rel="shortcut icon" href="../img/logo/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav >
+            <div class="nab">
+                <div class="logo-container">
+
+                    <img class="logo-img" src="../img/logo/logo.png" alt="Logo de la página"> <!--Logo de Página-->
+                </div>
+    
+                <form action="#"> <!-- Formulario de búsqueda -->
+                    <input type="search" class="search-data" placeholder="Buscar" required> <!-- Campo de búsqueda -->
+                    <button type="submit"><img src="../img/lupa/lupa.png" alt="" class="image"></button>
+                    <!-- Botón de búsqueda -->
+                </form>
+                <div class="menu-icon">
+                    <span class="fas fa-bars"></span> <!-- Icono de menú -->
+    
+                </div>
+    
+                <div class="nav-items"> <!-- Elementos de navegación -->
+    
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="../pages/ofertas.html">Ofertas</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li class="register"><a href="./registro.html">Registro</a class="registro-form"></li>
+                    <li><a href="../pages/formulario-inicio-sesion.html">Iniciar Sesión</a></li>
+                    <li class="cuenta"><a href="./mi-cuenta.html">Mi cuenta</a></li>
+                </div>
+                <div class="search-icon">
+                    <span class="fas fa-search"></span><!-- Icono de búsqueda -->
+                </div>
+                <div class="cancel-icon">
+                    <span class="fas fa-times"></span><!-- Icono de cancelar -->
+                </div>
+            </div>
+            
+        </nav>
+       
+
+    </header>
+    <main>
+      <!-- Se utiliza el componente Accordion de Boostrap que tiene varias secciones, cada una con un título y un cuerpo. El título se presenta como un botón que, cuando se hace clic, expande o colapsa el cuerpo de la sección correspondiente. Esto se logra utilizando los atributos `data-bs-toggle="collapse"` y `data-bs-target="#panelsStayOpen-collapseOne"` en el botón. El valor del atributo `data-bs-target` corresponde al `id` del elemento `div` que contiene el cuerpo de la sección.
+              Cada sección del acordeón tiene una pregunta como título, y la respuesta a la pregunta se proporciona en el cuerpo de la sección.-->
+        <div class="alineamiento">
+            <h2 id="soporte">Soporte Informativo</h2>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        ¿Cuál es el estado de mi pedido y cuándo puedo esperar recibirlo?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      Al momento de relizar la compra, se le enviara un correo electronico con el estado de su pedido y la fecha estimada de entrega.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        ¿Cómo puedo realizar una devolución o cambio de un producto?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Para realizar una devolución o cambio de un producto, debe comunicarse con nosotros a traves de nuestro correo electronico o por medio de nuestro numero de telefono.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        ¿Cuál es la política de garantía o devoluciones de su empresa?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        La politica de garantia de nuestra empresa es de 30 dias, en caso de que el producto no funcione correctamente, se le devolvera el dinero o se le cambiara el producto.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefor" aria-expanded="false" aria-controls="panelsStayOpen-collapsefor">
+                        ¿Pueden proporcionarme más detalles sobre los costos de envío y los tiempos de entrega?
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapsefor" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                          Los costos de envio y los tiempos de entrega se le proporcionaran al momento de realizar la compra.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="panelsStayOpen-collapsefive">
+                        ¿Qué métodos de pago aceptan en su tienda en línea?
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                          Por el momento solo aceptamos pagos por medio de Mercado Pago.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="false" aria-controls="panelsStayOpen-collapsesix">
+                        ¿Tienen un programa de recompensas o descuentos para clientes frecuentes?
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                          Por el momento no contamos con un programa de recompensas o descuentos para clientes frecuentes.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseseven" aria-expanded="false" aria-controls="panelsStayOpen-collapseseven">
+                        ¿Pueden proporcionar asistencia técnica si tengo problemas para navegar o utilizar su sitio web?
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseseven" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                          Si, puede comunicarse con nosotros a traves de nuestro correo electronico o por medio de nuestro numero de telefono.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseeight" aria-expanded="false" aria-controls="panelsStayOpen-collapseeight">
+                        ¿Ofrecen servicios de atención al cliente 24/7 o tienen horarios específicos de atención?
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseeight" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                          Nuestro horario de atencion es de 8:00 am a 20:00 pm.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsenine" aria-expanded="false" aria-controls="panelsStayOpen-collapsenine">
+                        ¿Tienen un programa de servicio al cliente premium o suscripciones VIP?
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapsenine" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                          Por el momento no contamos con un programa de servicio al cliente premium o suscripciones VIP.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+           
+           </div>
+        </div>
+        
+       <div class="ico">
+            <div >
+                <a href="./soporte.html"><img class="ico-1" src="../img/ico/apoyo-tecnico.png" alt="apoyo tecnico" width="70"></a>
+                <a href=""><img class="ico-2" src="../img/ico/whatsapp.png" alt="whatsapp" width="60"></a>
+                <i><a href=""></a></i>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        
+    </main>
+    
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="alineacion">
+            <div class="row">
+                <div class="col-6 col-md">
+                  <h5>Detalles de Contactó</h5>
+                  <ul class="list-unstyled text-small">
+                    <li class="mb-1"> <h6>Direccion</h6></li>
+                    <li class="mb-1"><p class="link-secondary">Av. Gral. J. J. de Urquiza 314 </p></li>
+                    <li class="mb-1"> <h6>Email</h6></li>
+                    <li class="mb-1"><p class="link-secondary">Aliwood@gmail.com</p></li>
+                    <li class="mb-1"> <h6>Telegram</h6></li>
+                    <li class="mb-1"><p class="link-secondary">0260 442-1078</p></li>
+                    
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="./terminos-y-condiciones.html">Terminos y condiciones</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="./politica-de-envios.html">Politica de  envios </a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="./politica-de-devolucion.html">Politica de  Devolucion</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="./soporte.html">Soporte</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <ul class="list-unstyled text-small">
+                    <li class="mb-1"> <h5>Metodos De Pago</h5></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Mercado Pago</a></li>
+                    <li class="mb-1"> <h5>Metodos De  Envios</h5></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Fats</a></li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+       
+      </footer>
+    
+   
+</body>
+</html>
