@@ -16,7 +16,8 @@ Para abordar el proyecto en el 2023, nos proponemos implementar un sitio web que
 
 | | **INTENGRANTE** |  **Nº DE SEMANA** | **ISSUE REASIGNADA A:** | **OBSERVACIONES** |
 | ---- | ---- | ----- | ----- | ---- |
-| :x: | *________* | *1-10* | *________* | *______________* | 
+| :x: | *________* | *1-10* | *________* | *______________* |  
+
 
 <hr>
 
