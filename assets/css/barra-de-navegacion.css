@@ -1,15 +1,13 @@
 /*Estilos globales */
-*{
+* {
   margin: 0;
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  
 }
 
-
 /* Estilos para barra de navegación */
-nav{
+nav {
   display: grid;
   flex-wrap: wrap;
   align-items: center;
@@ -23,14 +21,14 @@ nav{
   left: 150px;
 }
 
-input[type="search"]::-webkit-search-cancel-button {
+input[type='search']::-webkit-search-cancel-button {
   -webkit-appearance: none;
   appearance: none;
   display: none;
 }
 
 /* Estilos para el logotipo en la barra de navegación */
-nav .logo{
+nav .logo {
   color: #fff;
   font-size: 30px;
   font-weight: 600;
@@ -38,51 +36,46 @@ nav .logo{
 }
 /* Estilos para el contenedor del logotipo */
 .logo-container {
-  top: 80; 
- 
+  top: 80;
 }
 /* Estilos para la imagen del logotipo */
 .logo-img {
-  width: 140px; 
-  height: auto; 
+  width: 140px;
+  height: auto;
   position: fixed;
   left: 15px;
   top: 15px;
-  
 }
-
-
 
 /* Estilos para ocultar el logotipo en pantallas más pequeñas */
-@media screen and (max-width: 1140px) {  
-  .logo-container {  
+@media screen and (max-width: 1140px) {
+  .logo-container {
     position: fixed;
-    display:none;  /* Ocultamos el contenedor del logotipo */
+    display: none; /* Ocultamos el contenedor del logotipo */
     visibility: hidden;
-  } 
-}
-/* Estilos para ocultar el logotipo en pantallas más pequeñas */
-@media screen and (max-width: 900px) {  
-  .logo-container {  
-    position: fixed;
-    display:none;  /* Ocultamos el contenedor del logotipo */
-    visibility: hidden;
-  } 
+  }
 }
 
+/* Estilos para ocultar el logotipo en pantallas más pequeñas */
+@media screen and (max-width: 900px) {
+  .logo-container {
+    position: fixed;
+    display: none; /* Ocultamos el contenedor del logotipo */
+    visibility: hidden;
+  }
+}
 
 /* Estilos para los elementos de navegación */
-nav .nav-items{
+nav .nav-items {
   display: flex;
   flex: 1;
   padding: 0 0 0 40px;
 }
 /* Estilos para el botón de registro */
-.register{
-  background-color:#FF5757;
+.register {
+  background-color: #ff5757;
   border-radius: 11px;
   height: 32px;
-  
 }
 @media (max-width: 1024px) {
   .register {
@@ -95,60 +88,56 @@ nav .nav-items{
     background-color: transparent;
   }
 }
-  
-.cuenta{
-  background-color:#FF5757;
+
+.cuenta {
+  background-color: #ff5757;
   border-radius: 11px;
   height: 32px;
   visibility: hidden;
 }
 /* Estilos para elementos de clase 'navbar-logo' */
 
-.navbar-logo{
+.navbar-logo {
   padding: 0 20px;
   height: 15px;
   width: 1px;
   height: 5px;
   padding: 0 100px;
-
 }
 
 /* Estilos para imágenes en general */
 
-img{
+img {
   height: fit-content;
 }
 
-
 /* Estilos para los elementos de la lista en la barra de navegación */
-nav .nav-items li{
+nav .nav-items li {
   list-style: none;
   padding: 0 15px;
   white-space: nowrap; /* Evita que los elementos se dividan en varias líneas */
 }
 
 /* Estilos para los enlaces en la barra de navegación */
-nav .nav-items li a{
+nav .nav-items li a {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
-  
 }
 /* Estilos para los enlaces al pasar el mouse sobre ellos */
-nav .nav-items li a:hover{
+nav .nav-items li a:hover {
   color: #ff3d00;
 }
 /* Estilos para el formulario de búsqueda */
-nav form{
+nav form {
   display: flex;
   height: 40px;
   padding: 2px;
   border-radius: 1px;
-
 }
 /* Estilos para el campo de búsqueda */
-nav form .search-data{
+nav form .search-data {
   width: 88%;
   height: 145%;
   left: 30px;
@@ -161,9 +150,9 @@ nav form .search-data{
   background: white;
 }
 /* Estilos del ícono para el botón de búsqueda */
-.image{
-  position:absolute;
-  left:510px;
+.image {
+  position: absolute;
+  left: 510px;
   top: 3%;
   width: 59px;
   height: 47px;
@@ -173,29 +162,26 @@ nav form .search-data{
   font-weight: 500;
 }
 
-
 /* Estilos para el botón de búsqueda */
-nav form button{
-  font-size: 25px; 
-  border:none ;
+nav form button {
+  font-size: 25px;
+  border: none;
   cursor: pointer;
   height: 20px;
   position: fixed;
-  background-color:#e63600 ;
+  background-color: #e63600;
 }
-
 
 /* Estilos para el botón de búsqueda al pasar el mouse sobre él */
-nav form button.image:hover{
+nav form button.image:hover {
   background: #e63600;
 }
-
 
 /* Estilos para los íconos de menú, cancelar y búsqueda en la barra de navegación */
 
 nav .menu-icon,
 nav .cancel-icon,
-nav .search-icon{
+nav .search-icon {
   width: 40px;
   text-align: center;
   margin: 0 50px;
@@ -206,31 +192,31 @@ nav .search-icon{
 }
 nav .menu-icon span,
 nav .cancel-icon,
-nav .search-icon{
+nav .search-icon {
   display: none;
 }
 /* Estilos específicos para pantallas más pequeñas (max-width: 1024px) */
 
 @media (max-width: 1024px) {
-  nav{
+  nav {
     padding: 0 600px;
   }
 }
 /* Estilos específicos para pantallas aún más pequeñas (max-width: 1140px) */
 
-@media (max-width: 1140px){
-  nav{
+@media (max-width: 1140px) {
+  nav {
     padding: 0px;
   }
   /* Estilos para el logotipo en la barra de navegación en pantallas más pequeñas */
 
-  nav .logo{
+  nav .logo {
     flex: 2;
     text-align: center;
   }
   /* Estilos para los elementos de navegación en pantallas más pequeñas */
 
-  nav .nav-items{
+  nav .nav-items {
     position: fixed;
     z-index: 99;
     top: 40px;
@@ -245,21 +231,21 @@ nav .search-icon{
   }
   /* Estilos para los elementos de navegación cuando están activos (visible) */
 
-  nav .nav-items.active{
+  nav .nav-items.active {
     left: 0px;
   }
   /* Estilos para los elementos de la lista en la barra de navegación */
 
-  nav .nav-items li{
+  nav .nav-items li {
     line-height: 40px;
     margin: 30px 0;
   }
-   /* Estilos para los enlaces en la barra de navegación en pantallas más pequeñas */
-  nav .nav-items li a{
+  /* Estilos para los enlaces en la barra de navegación en pantallas más pequeñas */
+  nav .nav-items li a {
     font-size: 20px;
   }
   /* Estilos para el formulario de búsqueda en pantallas más pequeñas */
-  nav form{
+  nav form {
     position: absolute;
     top: 80px;
     right: 100px;
@@ -268,16 +254,16 @@ nav .search-icon{
     transition: top 0.3s ease, opacity 0.1s ease;
   }
   /* Estilos para el formulario de búsqueda cuando está activo (visible) */
-  nav form.active{
+  nav form.active {
     top: 70px;
     opacity: 50;
     pointer-events: auto;
     left: 150px;
   }
   /* Estilos para el efecto de flecha en el formulario de búsqueda */
-  nav form:before{
+  nav form:before {
     position: absolute;
-    content: "";
+    content: '';
     top: -13px;
     right: 0px;
     width: 0;
@@ -289,7 +275,7 @@ nav .search-icon{
   }
   /* Estilos para el efecto de fondo en el formulario de búsqueda */
 
-  nav form:after{
+  nav form:after {
     position: absolute;
     content: '';
     height: 60px;
@@ -304,25 +290,25 @@ nav .search-icon{
   }
   /* Estilos para los íconos de menú, cancelar y búsqueda en la barra de navegación */
 
-  nav .menu-icon{
+  nav .menu-icon {
     display: block;
   }
 
   nav .search-icon,
-  nav .menu-icon span{
+  nav .menu-icon span {
     display: block;
   }
   nav .menu-icon span.hide,
-  nav .search-icon.hide{
+  nav .search-icon.hide {
     display: none;
   }
-  nav .cancel-icon.show{
+  nav .cancel-icon.show {
     display: block;
   }
 }
 /* Estilos para el contenido principal de la página */
 
-.content{
+.content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -331,100 +317,92 @@ nav .search-icon{
 }
 /* Estilos para el encabezado del contenido */
 
-.content header{
+.content header {
   font-size: 30px;
   font-weight: 700;
 }
 /* Estilos para el texto principal del contenido */
 
-.content .text{
+.content .text {
   font-size: 30px;
   font-weight: 700;
 }
 /* Estilos para el espacio (margen) entre elementos */
 
-.space{
+.space {
   margin: 10px 0;
 }
 /* Estilos específicos para el logotipo cuando se agrega la clase 'space' */
 
-nav .logo.space{
+nav .logo.space {
   color: red;
   padding: 0 5px 0 0;
 }
 /* Estilos responsivos para pantallas medianas (max-width: 980px) */
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   nav .menu-icon,
   nav .cancel-icon,
-  nav .search-icon{
+  nav .search-icon {
     margin: 0 55px;
   }
-  nav form{
+  nav form {
     right: 30px;
-    
-    width:1px
-    
+
+    width: 1px;
   }
 }
 /* Estilos responsivos para pantallas muy pequeñas (max-width: 350px) */
-@media (max-width: 300px){
+@media (max-width: 300px) {
   nav .menu-icon,
   nav .cancel-icon,
-  nav .image
-  nav .search-icon{
+  nav .image nav .search-icon {
     margin: 0 0px;
     font-size: 400px;
   }
-  nav form{
+  nav form {
     right: 10x;
     left: 50px;
-    width:10px
+    width: 10px;
   }
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
   nav .menu-icon,
   nav .cancel-icon,
-  nav .image
-  nav .search-icon{
+  nav .image nav .search-icon {
     margin: 0 55px;
     font-size: 16px;
   }
-  nav form{
+  nav form {
     right: 10x;
     left: 50px;
-    width:10px
+    width: 10px;
   }
 }
 
-
-@media (max-width: 1100px){
+@media (max-width: 1100px) {
   nav .menu-icon,
   nav .cancel-icon,
-  nav .image{
+  nav .image {
     left: 130px;
     top: 15px;
-    width:20px;
-    height:27px
+    width: 20px;
+    height: 27px;
   }
-  nav .search-icon{
-   
+  nav .search-icon {
     margin: 0 45px;
- 
   }
-  nav form{
+  nav form {
     right: 10x;
     left: 350px;
-    width:150px;
-  
+    width: 150px;
   }
 }
-
 
 /* Estilos para el contenedor del contenido principal */
 
-.content{
+.content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -432,17 +410,17 @@ nav .logo.space{
 }
 /* Estilos para el encabezado del contenido principal */
 
-.content header{
+.content header {
   font-size: 30px;
   font-weight: 700;
 }
 /* Estilos para el texto principal del contenido */
 
-.content .text{
+.content .text {
   font-size: 30px;
   font-weight: 700;
 }
 /* Estilos para el espacio (margen) entre elementos en el contenido */
-.content .space{
+.content .space {
   margin: 10px 0;
 }
