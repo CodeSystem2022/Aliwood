@@ -1,282 +1,310 @@
 /* Estilo global para todos los elementos */
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Estilos generales del cuerpo de la página */
-body{
-	font-size: 1.7rem;
-	font-family: 'Merriweather Sans', sans-serif;
-	color: #ececec;
-	padding: 2rem;
+body {
+  font-size: 1.7rem;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #ececec;
 }
 
 /* Estilos para los títulos */
-h2{
-	text-align: center;
-	margin-bottom: 5rem;
-	font-size: 4rem;
+h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 4rem;
 }
 
 /* Estilos para el contenedor de Cocina */
 .Cocina {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-    padding: 0px;
-	margin-left: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 0px;
+  /* margin-left: 280px; */
 }
 
 /* Estilos para el contenedor de Baño */
 .Baño {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-    padding: 0px;
-	margin-left: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 0px;
+  /* margin-left: 280px; */
 }
 
 /* Estilos para el contenedor de Living */
 .Living {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-    padding: 0px;
-	margin-left: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 0px;
+  /* margin-left: 280px; */
 }
 
-.all-products{
-	position: absolute;
-	bottom: 1rem;
-	left: 20%;
+.all-products {
+  flex-grow: 1;
+}
 
+.products {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.product_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .product_container {
+    min-height: 450px;
+  }
 }
 
 /* Estilos para cada producto individual cocina*/
-.product{
-	overflow: hidden;
-    background: #101116;
-	color: #21201e;
-	text-align: center;
-	width: 240px;
-	height: 347px;
-	padding: 2rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border-radius: 0.2rem;
-	margin: 1rem;
-	visibility: visible;
+.product {
+  overflow: hidden;
+  background: #101116;
+  color: #21201e;
+  text-align: center;
+  width: 240px;
+  height: 347px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  margin: 1rem;
+  visibility: visible;
 }
 
 /* Estilos para cada producto individual baño*/
-.product1{
-	overflow: hidden;
-    background: #101116;
-	color: #21201e;
-	text-align: center;
-	width: 240px;
-	height: 347px;
-	padding: 2rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border-radius: 0.2rem;
-	margin: 1rem;
-	visibility: visible;
+.product1 {
+  overflow: hidden;
+  background: #101116;
+  color: #21201e;
+  text-align: center;
+  width: 240px;
+  height: 347px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  margin: 1rem;
+  visibility: visible;
 }
 
 /* Estilos para cada producto individual Living*/
 .product2 {
-	overflow: hidden;
-    background: #101116;
-	color: #21201e;
-	text-align: center;
-	width: 240px;
-	height: 347px;
-	padding: 2rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border-radius: 0.2rem;
-	margin: 1rem;
-	visibility: visible;
+  overflow: hidden;
+  background: #101116;
+  color: #21201e;
+  text-align: center;
+  width: 240px;
+  height: 347px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  margin: 1rem;
+  visibility: visible;
 }
 
 /* Estilos para cada producto individual Living*/
 .ocultar {
-	visibility: hidden;
+  visibility: hidden;
 }
 
 /* Estilos para los botones de selección de categoría */
-.product-btn2, .product-btn3, .product-btn4 {
-	color: #ececec;
-	padding: 1.2rem 3rem;
-	border-radius: 1rem;
-	margin-top: 1rem;
-	font-size: 20px;
-	transition: all 0.2s;
-    padding: 1.2rem 3rem;
-    border-radius: 1rem;
-    margin-left: 0px;
-    background-color: #dc3545;
-	display: inline-block;
-	
+.product-btn2,
+.product-btn3,
+.product-btn4 {
+  color: #ececec;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  font-size: 20px;
+  transition: all 0.2s;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  margin-left: 0px;
+  background-color: #dc3545;
+  display: inline-block;
 }
-
 
 /* Estilos para el contenedor de los botones de selección de categoría */
-.mod-btn{
-    color: #ececec;
-  
-    border-radius: 1rem;
-    margin-top: 1rem;
-    top:20px;
-    font-size: 53px;
-	border-radius: 0.2rem;
-	margin-left: 300px;   
+.mod-btn {
+  color: #ececec;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  top: 20px;
+  font-size: 53px;
+  border-radius: 0.2rem;
 }
 
-@media screen and (max-width: 821px) {  
-	.Cocina {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
+/* @media screen and (max-width: 821px) {
+  .Cocina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     padding: 0px;
-	margin-left: 95px;
+    margin-left: 95px;
 
-	flex-wrap: wrap;
-
-	} 
-	.mod-btn{
-		margin-right: 100px;
-	}
-}
+    flex-wrap: wrap;
+  }
+} */
 
 /* Cambio de estilo al pasar el mouse por encima de los botones */
 .product-btn2:hover {
-    background: linear-gradient(to bottom, #FF5F5F, #E70B25); /* Cambia el degradado al pasar el mouse por encima */
-    color: #FDFDFD; /* Mantiene el color del texto en blanco */
+  background: linear-gradient(
+    to bottom,
+    #ff5f5f,
+    #e70b25
+  ); /* Cambia el degradado al pasar el mouse por encima */
+  color: #fdfdfd; /* Mantiene el color del texto en blanco */
 }
 
 .product-btn3:hover {
-    background: linear-gradient(to bottom, #FF5F5F, #E70B25); /* Cambia el degradado al pasar el mouse por encima */
-    color: #FDFDFD; /* Mantiene el color del texto en blanco */
+  background: linear-gradient(
+    to bottom,
+    #ff5f5f,
+    #e70b25
+  ); /* Cambia el degradado al pasar el mouse por encima */
+  color: #fdfdfd; /* Mantiene el color del texto en blanco */
 }
 
 .product-btn4:hover {
-    background: linear-gradient(to bottom, #FF5F5F, #E70B25); /* Cambia el degradado al pasar el mouse por encima */
-    color: #FDFDFD; /* Mantiene el color del texto en blanco */
+  background: linear-gradient(
+    to bottom,
+    #ff5f5f,
+    #e70b25
+  ); /* Cambia el degradado al pasar el mouse por encima */
+  color: #fdfdfd; /* Mantiene el color del texto en blanco */
 }
 
-
 /* Efecto de escala y sombra al pasar el mouse por encima del producto */
-.product:hover img{
-	scale:  1.1;
+.product:hover img {
+  scale: 1.1;
 }
 
 .product:hover {
-	box-shadow: 5px 15px 25px #eeeeee;
+  box-shadow: 5px 15px 25px #eeeeee;
 }
 
-.product1:hover img{
-	scale:  1.1;
+.product1:hover img {
+  scale: 1.1;
 }
 
 .product1:hover {
-	box-shadow: 5px 15px 25px #eeeeee;
+  box-shadow: 5px 15px 25px #eeeeee;
 }
 
-.product2:hover img{
-	scale:  1.1;
+.product2:hover img {
+  scale: 1.1;
 }
 
 .product2:hover {
-	box-shadow: 5px 15px 25px #eeeeee;
+  box-shadow: 5px 15px 25px #eeeeee;
 }
-
 
 /* Estilos para la imagen del producto */
 .product img {
-	height: 200px;
-	margin: 1rem;
-	transition: all 0.3s;
+  height: 200px;
+  margin: 1rem;
+  transition: all 0.3s;
 }
 
 .product1 img {
-	height: 200px;
-	margin: 1rem;
-	transition: all 0.3s;
+  height: 200px;
+  margin: 1rem;
+  transition: all 0.3s;
 }
 
 .product2 img {
-	height: 200px;
-	margin: 1rem;
-	transition: all 0.3s;
+  height: 200px;
+  margin: 1rem;
+  transition: all 0.3s;
 }
 
 /* Estilos para los enlaces de compra */
-.product a:link, .product a:visited{
-	color: #A0A0A0;
-	display: inline-block;
-	text-decoration: none;
-	background-color:  #24252A;
-	padding: 1.2rem 3rem;
-	border-radius: 1rem;
-	margin-top: 1rem;
-	font-size: 14px;
-	transition: all 0.2s;
+.product a:link,
+.product a:visited {
+  color: #a0a0a0;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #24252a;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  font-size: 14px;
+  transition: all 0.2s;
 }
 
-.product1 a:link, .product1 a:visited{
-	color: #A0A0A0;
-	display: inline-block;
-	text-decoration: none;
-	background-color:  #24252A;
-	padding: 1.2rem 3rem;
-	border-radius: 1rem;
-	margin-top: 1rem;
-	font-size: 14px;
-	transition: all 0.2s;
+.product1 a:link,
+.product1 a:visited {
+  color: #a0a0a0;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #24252a;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  font-size: 14px;
+  transition: all 0.2s;
 }
 
-.product2 a:link, .product2 a:visited{
-	color: #A0A0A0;
-	display: inline-block;
-	text-decoration: none;
-	background-color:  #24252A;
-	padding: 1.2rem 3rem;
-	border-radius: 1rem;
-	margin-top: 1rem;
-	font-size: 14px;
-	transition: all 0.2s;
+.product2 a:link,
+.product2 a:visited {
+  color: #a0a0a0;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #24252a;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  font-size: 14px;
+  transition: all 0.2s;
 }
-
 
 /* Cambio de estilo al pasar el mouse por encima del enlace de compra */
-.product a:hover{
-	transform: scale(1.1);
-    background: linear-gradient(to bottom, #FF5F5F, #E70B25); 
-    color: #FDFDFD;
+.product a:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to bottom, #ff5f5f, #e70b25);
+  color: #fdfdfd;
 }
 
-.product1 a:hover{
-	transform: scale(1.1);
-    background: linear-gradient(to bottom, #FF5F5F, #E70B25); 
-    color: #FDFDFD;
+.product1 a:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to bottom, #ff5f5f, #e70b25);
+  color: #fdfdfd;
 }
 
-.product2 a:hover{
-	transform: scale(1.1);
-    background: linear-gradient(to bottom, #FF5F5F, #E70B25); 
-    color: #FDFDFD;
+.product2 a:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to bottom, #ff5f5f, #e70b25);
+  color: #fdfdfd;
 }

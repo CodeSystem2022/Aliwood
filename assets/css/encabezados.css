@@ -1,92 +1,111 @@
-
-.bodi {
+/* .bodi {
     font-family: 'Poppins', sans-serif;
-    /* Define la fuente del texto */
     display: flex;
-    /* Utiliza un modelo de caja flexible */
     justify-content: center;
-    /* Centra los elementos horizontalmente */
     align-items: center;
-    /* Centra los elementos verticalmente */
     height: 100vh;
-    /* Establece la altura al 100% del viewport (ventana visible) */
     margin: 0;
-    /* Elimina los márgenes por defecto */
 
+} */
+
+/* .alineacion {
+  margin-right: 655px;
+  margin-top: 685px;
+} */
+
+.home-products__section {
+  padding: 60px 0;
+  display: flex;
 }
 
-.alineacion {
-    margin-right: 655px;
-    margin-top: 685px;
+.home-products__contenedor {
+  display: flex;
+  width: 100%;
+  gap: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+  .home-products__contenedor {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card_wrapper {
+    display: flex;
+  }
 }
 
 .card {
-    border: 2px solid #000;
-    /* Establece un borde sólido de 2 píxeles en color negro */
-    border-radius: 8px;
-    /* Bordes redondeados en las esquinas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Añade una sombra suave */
-    text-align: center;
-    /* Centra el texto dentro de la tarjeta */
+  border: 2px solid #000;
+  /* Establece un borde sólido de 2 píxeles en color negro */
+  border-radius: 8px;
+  /* Bordes redondeados en las esquinas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Añade una sombra suave */
+  text-align: center;
+  /* Centra el texto dentro de la tarjeta */
 }
 
+@media screen and (max-width: 1024px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
 
 .card img {
-    max-width: 100%;
-    /* La imagen no excederá el ancho del contenedor */
-    height: auto;
-    /* La altura se ajusta automáticamente para mantener la proporción */
-    width: 350px;
-    /* Ancho específico para la imagen */
-    border-radius: 30px;
-    /* Bordes redondeados en las esquinas */
-    border: 4px solid #000;
-    /* Borde sólido de 4 píxeles en color negro */
+  max-width: 100%;
+  /* La imagen no excederá el ancho del contenedor */
+  height: auto;
+  /* La altura se ajusta automáticamente para mantener la proporción */
+  width: 350px;
+  /* Ancho específico para la imagen */
+  border-radius: 30px;
+  /* Bordes redondeados en las esquinas */
+  border: 4px solid #000;
+  /* Borde sólido de 4 píxeles en color negro */
 }
-
 
 .description {
-    color: #fff;
-    /* Color del texto: blanco */
-    text-align: center;
-    /* Justifica el texto */
-    font-size: 16px;
-    /* Tamaño de la fuente */
-    line-height: 1.6;
-    /* Espaciado entre líneas */
-    max-width: 300px;
-    /* Ancho máximo del texto */
-    margin: 0 auto;
-    /* Centra el texto horizontalmente */
+  color: #fff;
+  /* Color del texto: blanco */
+  text-align: center;
+  /* Justifica el texto */
+  font-size: 16px;
+  /* Tamaño de la fuente */
+  line-height: 1.6;
+  /* Espaciado entre líneas */
+  max-width: 300px;
+  /* Ancho máximo del texto */
+  margin: 0 auto;
+  /* Centra el texto horizontalmente */
 }
-
 
 .more-info {
-    background-color: #FF5757;
-    /* Color de fondo del botón */
-    color: #fff;
-    /* Color del texto: blanco */
-    border: none;
-    /* Sin borde */
-    padding: 10px 20px;
-    /* Espaciado dentro del botón */
-    font-size: 16px;
-    /* Tamaño de la fuente */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    cursor: pointer;
-    /* Cambia el cursor al pasar por encima */
-    margin-top: 10px;
-    /* Espacio arriba del botón */
-    margin-bottom: 10px;
-    /* Espacio abajo del botón */
+  background-color: #ff5757;
+  /* Color de fondo del botón */
+  color: #fff;
+  /* Color del texto: blanco */
+  border: none;
+  /* Sin borde */
+  padding: 10px 20px;
+  /* Espaciado dentro del botón */
+  font-size: 16px;
+  /* Tamaño de la fuente */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Cambia el cursor al pasar por encima */
+  margin-top: 10px;
+  /* Espacio arriba del botón */
+  margin-bottom: 10px;
+  /* Espacio abajo del botón */
 }
 
-
-
-
 .more-info:hover {
-    background-color: #0056b3;
-    /* Cambia el color de fondo al pasar el ratón */
+  background-color: #0056b3;
+  /* Cambia el color de fondo al pasar el ratón */
 }
